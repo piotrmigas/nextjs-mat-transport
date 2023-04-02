@@ -1,0 +1,171 @@
+{
+  "description": "Oferujemy wynajem autokarów, wynajem busów i minibusów oraz wynajem samochodów osobowych z kierowcą. Nowoczesne pojazdy i doświadczeni kierowcy to nasz standard. Mat Transport, Kraków",
+  "title": "Wynajem autokarów i busów | Mat Transport Kraków",
+  "navbar": {
+    "about": "O nas",
+    "fleet": "Flota",
+    "testimonials": "Rekomendacje",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "header": "Wynajem komfortowych autokarów i minibusów",
+    "content": "Firma Mat Transport oferuje wynajem autokarów, busów, minibusów i samochodów osobowych. Usługi świadczymy na najwyższym europejskim poziomie. Gwarantujemy korzystne warunki płatności oraz ceny. Oczywiście istnieje możliwość negocjacji, potrafimy dopasować ofertę do każdego klienta. Dysponujemy nowoczesną flotą pojazdów, od luksusowych samochodów osobowych, które można wynająć wraz z kierowcą, poprzez różnej wielkości busy po komfortowe autokary. Obsługujemy klientów w zakresie transportu osobowego, zarówno indywidualnego jak i grupowego. Wynajmujemy nasze pojazdy do obsługi konferencji, eventów, transferów jak i wycieczek. Dzięki szerokiej bazie pojazdów możemy przygotować ofertę zarówno dla jednej osoby, jak i pięćdziesięcioosobowej grupy."
+  },
+  "about": {
+    "header": "O firmie",
+    "p1": "Jako firma <strong>Mat Transport</strong> rozpoczęliśmy działalność w 1987 roku w Krakowie. Specjalizujemy się w wynajmie autokarów, busów i wysokiej klasy samochodów osobowych. Współpracujemy z najlepszymi polskimi i zagranicznymi biurami podróży. Obsługujemy najwyższe urzędy państwowe, koncerny międzynarodowe i banki. W naszej ofercie znajduje się obsługa wycieczek, transfery lotniskowe, serwis transportowy w czasie trwania konferencji itp. Naszą ofertę kierujemy zarówno do firm jak i do klientów indywidualnych, polskich i zagranicznych.",
+    "p2": "Tabor firmy <strong>Mat Transport</strong> to wyłącznie nowoczesne pojazdy z wyposażeniem gwarantującym najwyższe bezpieczeństwo oraz komfort podróżowania. Samochody osobowe, to limuzyny marki Audi, Mercedes i BMW. Oferujemy ich wynajem wraz z kierowcą. Busy marki Mercedes oraz autokary firm Setra, Neoplan, Mercedes i Iveco, którymi dysponujemy, to komfortowe pojazdy mogące zapewnić transport dla 5-50 osób.",
+    "p3": "Nasi kierowcy charakteryzują się wysoką kulturą osobistą, wysokimi kwalifikacjami zawodowymi i wieloletnim doświadczeniem, daje to pewność dotarcia do celu w bezpieczny i przyjazny sposób. Kierowcy obsługujący klientów zagranicznych, posługują się językiem angielskim.",
+    "p4": "Firma posiada licencje na wykonywanie krajowego i międzynarodowego transportu osób (nr licencji 0001312) oraz certyfikat kompetencji zawodowej (nr 01301/F3/03)."
+  },
+  "fleet": {
+    "header": "Oferta autokarów, busów i samochodów osobowych na wynajem",
+    "title": "Oddajemy do Państwa dyspozycji komfortowe autokary, busy i minibusy oraz możliwość wynajmu luksusowych samochodów osobowych z kierowcą.",
+    "content": "Oferta firmy Mat Transport wynajmu autokarów, busów i samochodów osobowych skierowana jest do klientów indywidualnych, firm i biur podróży, do wszystkich zainteresowanych usługami transportowymi na najwyższym poziomie. Nasze usługi świadczymy zarówno w kraju jak i zagranicą. W naszej ofercie znajdują się transfery lotniskowe krajowe i zagraniczne, serwis transportowy w czasie trwania konferencji, eventów i wydarzeń państwowych, obsługa wycieczek objazdowych i pielgrzymek oraz zorganizowanych wyjazdów na różnego typu wydarzenia sportowe czy kulturalne, a także wiele innych usług. Obsługujemy również klientów VIP, klasa naszych pojazdów gwarantuje najwyższy poziom usług.",
+    "cars": "Osobowe",
+    "buses8": "Busy 6-8<br/>miejsc",
+    "buses21": "Busy 16-21<br/>miejsc",
+    "coaches33": "Autokary do<br/>33 miejsc",
+    "coaches55": "Autokary do<br/>55 miejsc"
+  },
+  "cars": {
+    "header": "Samochody osobowe z kierowcą wynajem",
+    "mercedese2018": {
+      "header": "MERCEDES KLASA E VIP EXCLUSIVE rocznik 2018",
+      "seats": "liczba miejsc 4+1",
+      "info": "wyposażenie: wersja luksusowa z pełnym wyposażeniem, w tym: skórzana tapicerka, drewniane wykończenia, klimatyzacja automatyczna dwustrefowa, zawieszenie pneumatyczne, nastrojowe oświetlenie ambiente, wysokiej klasy naglośnienie, cd, usb, przyciemniane szyby dla pasażerów, gps live traffic, itd."
+    },
+    "mercedese2019": {
+      "header": "MERCEDES KLASA E VIP EXCLUSIVE rocznik 2019",
+      "seats": "liczba miejsc 4+1",
+      "info": "wyposażenie: wersja luksusowa z pełnym wyposażeniem, w tym: skórzana tapicerka, drewniane wykończenia, klimatyzacja automatyczna dwustrefowa, zawieszenie pneumatyczne, nastrojowe oświetlenie ambiente, wysokiej klasy naglośnienie, cd, usb, przyciemniane szyby dla pasażerów, gps live traffic, itd."
+    },
+    "bmw5black": {
+      "header": "BMW seria 5 VIP rocznik 2015",
+      "seats": "liczba miejsc 4+1",
+      "info": "wyposażenie: wersja luksusowa z pełnym wyposażeniem, w tym: skórzana tapicerka, drewniane wykończenia, klimatyzacja automatyczna dwustrefowa, zawieszenie pneumatyczne, nastrojowe oświetlenie ambiente, wysokiej klasy nagłośnienie, cd, usb, przyciemniane szyby dla pasażerów, gps live traffic, itd."
+    },
+    "bmw5blue": {
+      "header": "BMW seria 5 VIP rocznik 2014",
+      "seats": "liczba miejsc 4+1",
+      "info": "wyposażenie: wersja luksusowa z pełnym wyposażeniem, w tym: skórzana tapicerka, drewniane wykończenia, klimatyzacja automatyczna dwustrefowa, cd, przyciemniane szyby dla pasażerów, gps, na życzenie kierowca z językiem angielskim."
+    }
+  },
+  "buses8": {
+    "header": "Busy wynajem 6-8 miejsc",
+    "mercedesavantgarde": {
+      "header": "MERCEDES KLASA V AVANTGARDE rocznik 2016",
+      "seats": "liczba miejsc 6+1",
+      "info": "wyposażenie: kolor czarny metalik, automatyczna czterostrefowa klimatyzacja, skórzana tapicerka, fotele regulowane z podłokietnikami, drewniane wykończenia, oświetlenie ambiente, przyciemniane szyby w przestrzeni pasażerskiej, gps, cd, usb.",
+      "info2": "Najbardziej luksusowy van produkowany obecnie, pneumatyczne zawieszenie wraz ze skórzanymi indywidualnymi fotelami zapewni maksimum komfortu, każdy fotel posiada pełny zakres regulacji, możliwość dowolnej aranżacji wnętrza pozwala m.in. na konferencyjny układ siedzeń, każdy pasażer ma możliwość indywidualnego doboru temperatury przez własny panel regulacji klimatyzacji, całości dopełnia najwyższej jakości system nagłośnienia, drewniane wykończenia oraz nastrojowe oświetlenie ambiente, szereg systemów bezpieczeństwa w które wyposażony jest samochód dba o bezpieczny przebieg podróży, mercedes klasy v 2015 pozwala na podróż w najbardziej komfortowych i bezpiecznych warunkach."
+    },
+    "mercedesvito111": {
+      "seats": "liczba miejsc 8+1",
+      "info": "wyposażenie: wersja turystyczna, siedzenia regulowane comfort, klimatyzacja, cd, przyciemniane szyby w przestrzeni pasażerskiej, uchwyty na napoje, gps, na życzenie kierowca z językiem angielskim lub holenderskim."
+    },
+    "mercedesvitoextralong": {
+      "header": "MERCEDES VITO/V KLASA EXTRA LONG rocznik 2017",
+      "seats": "liczba miejsc 7+1",
+      "info": "wyposażenie: czarny metalik, klimatyzacja i ogrzewanie dwustrefowe automatyczne, webasto, fotele regulowane z podłokietnikami, indywidualne oświetlenie, możliwość konferencyjnego lub standardowego ustawienia foteli, przyciemniane szyby w przestrzeni pasażerskiej, cd, uchwyty na napoje, gps,wersja przedłużona z bardzo dużym miejscem na bagaż, na życzenie kierowca z językiem angielskim."
+    },
+    "minibusvianocdi": {
+      "seats": "liczba miejsc 5+1",
+      "info": "wyposażenie: wersja luksusowa, klimatyzacja i ogrzewanie dwustrefowe, webasto, indywidualne regulowane fotele, przesuwane i obracane z podłokietnikami, indywidualne oświetlenie, możliwość konferencyjnego lub standardowego ustawienia foteli, przyciemniane szyby w przestrzeni pasażerskiej, cd, uchwyty na napoje, gps, na życzenie kierowca z językiem angielskim lub holenderskim."
+    },
+    "minibusvianovip": {
+      "seats": "liczba miejsc 7+1",
+      "info": "wyposażenie: wersja luksusowa, półskórzana tapicerka, klimatyzacja i ogrzewanie dwustrefowe, webasto, fotele regulowane z podłokietnikami, indywidualne oświetlenie, możliwość konferencyjnego lub standardowego ustawienia foteli, przyciemniane szyby w przestrzeni pasażerskiej, cd, uchwyty na napoje, gps, na życzenie kierowca z językiem angielskim"
+    }
+  },
+  "buses21": {
+    "header": "Busy wynajem 16-21 miejsc",
+    "mercedessprinter2020": {
+      "seats": "liczba miejsc 20+1",
+      "info": "wyposażenie: wersja vip kolor czarny metalik, skórzana tapicerka, drewniane wykończenia ozdobne, klimatyczne oświetlenie ambiente, fotele regulowane, rozsuwane z podłokietnikami, klimatyzacja automatyczna z indywidualnymi nawiewami, webasto, dvd/cd, monitor lcd, przyciemniane szyby, mikrofon, euro 6."
+    },
+    "mercedessprinter2013": {
+      "seats": "liczba miejsc 21+1",
+      "info": "wyposażenie: wersja turystyczna, fotele regulowane z podłokietnikami i podnóżkami, klimatyzacja automatyczna z indywidualnymi nawiewami, webasto, oświetlenie, dvd/cd, monitor lcd, automatyczny stopień ułatwiający wsiadanie, przyciemniane szyby, mikrofon, euro 5."
+    }
+  },
+  "coaches33": {
+    "header": "Autokary wynajem - do 33 miejsc",
+    "ivecomago2silver": {
+      "seats": "liczba miejsc 30+1",
+      "info": "wyposażenie: automatyczna klimatyzacja z indywidualnymi nawiewami, webasto, mikrofon, komfortowe fotele rozkładane z podłokietnikami z bardzo dużą przestrzenią na nogi, dvd/cd, monitor, oświetlenie, przyciemniane szyby, pasy bezpieczeństwa na wszystkich fotelach, autobus przestronny z bardzo dużymi odstępami miedzy fotelami, bardzo duża przestrzeń na bagaż."
+    },
+    "ivecomago2white": {
+      "seats": "liczba miejsc 32+1",
+      "info": "wyposażenie: automatyczna klimatyzacja z indywidualnymi nawiewami, webasto, mikrofon, komfortowe fotele rozkładane z podłokietnikami z bardzo dużą przestrzenią na nogi, dvd/cd, monitor x 2, oświetlenie, przyciemniane szyby, pasy bezpieczeństwa na wszystkich fotelach, autobus przestronny z bardzo dużymi odstępami miedzy fotelami, bardzo duża przestrzeń na bagaż."
+    },
+    "ivecorosero": {
+      "seats": "liczba miejsc 30+1",
+      "info": "wyposażenie: automatyczna klimatyzacja z indywidualnymi nawiewami, gniazda usb, gniazda 220 v do ładowania laptopów, webasto, mikrofon x 2, półskórzane, komfortowe fotele rozkładane z podłokietnikami z bardzo dużą przestrzenią na nogi, lodówka, dvd/cd, monitor x 2, oświetlenie, przyciemniane szyby, pasy bezpieczeństwa na wszystkich fotelach, autobus przestronny z bardzo dużymi odstępami między fotelami, duża przestrzeń na bagaż."
+    }
+  },
+  "coaches55": {
+    "header": "Autokary wynajem - do 55 miejsc",
+    "mercedes350": {
+      "seats": "liczba miejsc 49+2",
+      "info": "wyposażenie: klimatyzacja, wc, dvd/cd, gps, mikrofon, stoliki, pasy bezpieczeństwa, abs, asr, telma, lodówka, barek, toaleta, przyciemniane szyby, ubezpieczenie ac/oc/nnw."
+    },
+    "mercedesturismo": {
+      "seats": "liczba miejsc 53+2",
+      "info": "wyposażenie: klimatyzacja, wc, dvd/cd, gps, mikrofon, pasy bezpieczeństwa, abs, asr, retarder, lodówka, barek, toaleta, przyciemniane szyby, ubezpieczenie ac/oc/nnw."
+    },
+    "neoplaneuroliner": {
+      "seats": "liczba miejsc 49+2",
+      "info": "wyposażenie: klimatyzacja, wc, dvd/cd, gps, mikrofon, stoliki, pasy bezpieczeństwa, abs, asr, telma, lodówka, barek, toaleta, przyciemniane szyby, ubezpieczenie ac/oc/nnw."
+    },
+    "setra415": {
+      "seats": "liczba miejsc 49+2",
+      "info": "wyposażenie: klimatyzacja, wc, dvd/cd, gps, mikrofon, stoliki, pasy bezpieczeństwa, abs, asr, telma, lodówka, barek, toaleta, przyciemniane szyby, ubezpieczenie ac/oc/nnw."
+    }
+  },
+  "testimonials": {
+    "header": "Rekomendacje",
+    "title": "Firma <strong>MAT TRANSPORT</strong> istnieje od 1987 roku.",
+    "p1": "Od początku naszej działalności świadczymy usługi na najwyższym poziomie. Możemy pochwalić się wieloma sukcesami czego dowodem jest zadowolenie kontrahentów, listy z pochwałami od naszych klientów oraz liczne dyplomy i certyfikaty.",
+    "img1": "Ścisła współpraca z BOR podczas wizyty <strong>prezydenta USA Baracka Obamy</strong> - Warszawa, maj 2011",
+    "img2": "Wizyta <strong>prezydenta USA G.W. Buscha</strong> - Kraków, maj 2003",
+    "img3": "Spotkanie ministrów kultury krajów Unii Europejskiej - Kraków, 14-16.10.2004",
+    "img4": "Grupa Szwajcarów - 14-15.08.2009",
+    "p2": "Obsługa niezliczonych klientów turystycznych zarówno grupowych jak i indywidualnych (zwiedzania, transfery, wycieczki). Na dowód zadowolenia klientów dołączamy kilka skanów z podziękowaniami za nasz serwis.",
+    "li1": "Obsługa z zakresu transportu podczas XXI FORUM EKONOMICZNEGO KRYNICA 2011 (POLSKA GOSPODARKA ENERGETYCZNA), zapewnienie indywidualnego transportu dla <strong>PREMIERA JANA KRZYSZTOFA BIELECKIEGO</strong>.",
+    "li2": "Współpraca z <strong>BOR</strong> z zakresu poruszania sie w <strong>KOLUMNIE PREZYDENCKIEJ RZĄDÓW CZECH, UKRAINY, CHORWACJI ORAZ BUŁGARII</strong>.",
+    "li3": "Zapewnienie serwisu dla <strong>BURMISTRZA RZYMU I PREZYDENTA TOSKANII 2011</strong>.",
+    "li4": "Obsługa transportowa pielgrzymkowej grupy włoskiej 560 osób, 24-28 luty 2011.",
+    "li5": "Obsługa transportowa pielgrzymkowej grupy włoskiej 970 osób, kwiecień 2011.",
+    "li6": "Nasze samochody wykorzystywane były w trakcie trwania prezydencji Unii Europejskiej w 2011 roku.",
+    "li7": "Obsługa konferencji <strong>PFIZER</strong>, <strong>ROCHE</strong>, <strong>PHILIP MORRIS</strong>, <strong>ING</strong>...",
+    "li8": "Współpraca z osobami ze świata show biznesu, kultury."
+  },
+  "contact": {
+    "header": "Kontakt",
+    "name": "FIRMA MAT TRANSPORT OSOBOWY",
+    "h1": "ADRES KORESPONDENCYJNY",
+    "p1": "UL. UŚMIECH 8/3<br/>30-560 KRAKÓW",
+    "h2": "ADRES BIURA",
+    "p2": "UL. WODNA 4<br/>30-556 KRAKÓW<br/>BIURO CZYNNE:<br/>PN-PT 10-17",
+    "h3": "TELEFONY",
+    "formHeader": "Napisz do nas",
+    "formName": "Imię",
+    "formLastName": "Nazwisko",
+    "formPhone": "Telefon",
+    "formDate": "Data transferu",
+    "formMessage": "Wiadomość",
+    "formTextarea": "Twoja wiadomość...",
+    "formBtn": "Wyślij",
+    "alertSuccess": "Wysłano",
+    "alertError": "Błąd"
+  },
+  "sport": {
+    "ul": "Sukcesy załogi MAT SPORT:",
+    "li1": "1 miejsce w Rajdzie Wisły klasa E 30 - Runda Pucharu Polski 2011",
+    "li2": "3 miejsce w Rajdzie Elmot/Świdnickim w klasie N2 - Runda Pucharu Polski 2010",
+    "li3": "3 miejsce w Rajdzie Krakowskim w klasie N2 - Runda Pucharu Polski 2010",
+    "li4": "V-ce liderzy klasyfikacji N2 PUCHARU POLSKI po 5 rundach w roku 2010",
+    "li5": "V-ce mistrzowie okręgu krakowskiego w klasyfikacji generalnej - 2008",
+    "li6": "Mistrzowie okręgu krakowskiego w Klasie do poj. 2000cm3 - 2008"
+  }
+}
