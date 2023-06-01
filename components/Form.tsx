@@ -1,18 +1,10 @@
 import { useState } from 'react';
-import { useForm, SubmitHandler } from 'react-hook-form';
+import { useForm, SubmitHandler, FieldValues } from 'react-hook-form';
 import { useAlert } from 'react-alert';
 import { useTranslation } from 'next-i18next';
 import emailjs, { init } from 'emailjs-com';
 import 'react-datepicker/dist/react-datepicker.css';
 import DatePicker from 'react-datepicker';
-
-type Inputs = {
-  firstName: string;
-  lastName: string;
-  message: string;
-  phone: number;
-  email: string;
-};
 
 const Form = () => {
   const [startDate, setStartDate] = useState(new Date());
@@ -27,9 +19,9 @@ const Form = () => {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm();
+  } = useForm({ mode: 'onChange' });
 
-  const onSubmit: SubmitHandler<Inputs> = ({ firstName, lastName, message, phone, email }) => {
+  const onSubmit: SubmitHandler<FieldValues> = ({ firstName, lastName, message, phone, email }) => {
     emailjs
       .send('gmail', 'template_1G20d3s3', {
         message_html: message,
@@ -91,9 +83,8 @@ const Form = () => {
                 type='text'
                 {...register('email', {
                   required: true,
-                  pattern: {
-                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-                    message: '',
+                  validate: {
+                    matchPattern: (v) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(v),
                   },
                 })}
                 id='email'
@@ -109,11 +100,16 @@ const Form = () => {
                 {t`contact.formPhone`}
               </label>
               <input
-                type='number'
-                {...register('phone')}
+                type='tel'
+                {...register('phone', {
+                  required: true,
+                })}
                 id='phone'
-                min='0'
-                className='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
+                className={`mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md ${
+                  errors.phone
+                    ? 'focus:border-red-400 focus:ring-red-400'
+                    : 'focus:border-indigo-500 focus:ring-indigo-500'
+                }`}
               />
             </div>
             <div className='col-span-6'>
