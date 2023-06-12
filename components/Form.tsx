@@ -1,18 +1,14 @@
 import { useState } from 'react';
 import { useForm, SubmitHandler, FieldValues } from 'react-hook-form';
-import { useAlert } from 'react-alert';
+import { toast } from 'react-toastify';
 import { useTranslation } from 'next-i18next';
-import emailjs, { init } from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import 'react-datepicker/dist/react-datepicker.css';
 import DatePicker from 'react-datepicker';
 
 const Form = () => {
   const [startDate, setStartDate] = useState(new Date());
   const { t } = useTranslation('common');
-
-  init(process.env.NEXT_PUBLIC_EMAILJS as string);
-
-  const alert = useAlert();
 
   const {
     register,
@@ -23,20 +19,25 @@ const Form = () => {
 
   const onSubmit: SubmitHandler<FieldValues> = ({ firstName, lastName, message, phone, email }) => {
     emailjs
-      .send('gmail', 'template_1G20d3s3', {
-        message_html: message,
-        start_date: startDate.toLocaleDateString('pl-PL'),
-        from_firstName: firstName,
-        from_lastName: lastName,
-        from_phone: phone,
-        reply_to: email,
-      })
+      .send(
+        'gmail',
+        'template_1G20d3s3',
+        {
+          message_html: message,
+          start_date: startDate.toLocaleDateString('pl-PL'),
+          from_firstName: firstName,
+          from_lastName: lastName,
+          from_phone: phone,
+          reply_to: email,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS
+      )
       .then(() => {
-        alert.success(t`contact.alertSuccess`);
+        toast.success(t`contact.alertSuccess`);
         reset();
       })
       .catch(() => {
-        alert.error(t`contact.alertError`);
+        toast.error(t`contact.alertError`);
       });
   };
 
