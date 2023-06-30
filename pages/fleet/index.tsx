@@ -4,17 +4,35 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Layout from '../../components/Layout';
 import PageHeader from '../../components/PageHeader';
 import { GetStaticProps } from 'next';
+import { useMemo } from 'react';
 
 const Fleet = () => {
   const { t } = useTranslation('common');
 
   const icons = [
-    { name: 'cars', icon: 'fa-car', text: t`fleet.cars` },
-    { name: 'buses8', icon: 'fa-shuttle-van', text: t`fleet.buses8` },
-    { name: 'buses21', icon: 'fa-shuttle-van', text: t`fleet.buses21` },
-    { name: 'coaches33', icon: 'fa-bus', text: t`fleet.coaches33` },
-    { name: 'coaches55', icon: 'fa-bus', text: t`fleet.coaches55` },
+    { name: 'cars', icon: 'fa-car', text: 'fleet.cars' },
+    { name: 'buses8', icon: 'fa-shuttle-van', text: 'fleet.buses8' },
+    { name: 'buses21', icon: 'fa-shuttle-van', text: 'fleet.buses21' },
+    { name: 'coaches33', icon: 'fa-bus', text: 'fleet.coaches33' },
+    { name: 'coaches55', icon: 'fa-bus', text: 'fleet.coaches55' },
   ];
+
+  const categories = useMemo(
+    () =>
+      icons.map(({ icon, text, name }) => (
+        <div className='grid sm:grid-rows-2 gap-3 text-center justify-center items-center' key={text}>
+          <Trans>
+            <p>{t(text)}</p>
+          </Trans>
+          <Link href={`/fleet/${name}`}>
+            <a>
+              <i className={`fas ${icon} fa-3x`} />
+            </a>
+          </Link>
+        </div>
+      )),
+    [t]
+  );
 
   return (
     <Layout title={t`navbar.fleet`}>
@@ -24,20 +42,7 @@ const Fleet = () => {
           <p className='py-5'>{t`fleet.title`}</p>
           <p>{t`fleet.content`}</p>
           <hr className='my-10 border-gray-400' />
-          <div className='grid md:grid-cols-5 pb-10 gap-3'>
-            {icons.map(({ icon, text, name }) => (
-              <div className='grid sm:grid-rows-2 gap-3 text-center justify-center items-center' key={text}>
-                <Trans>
-                  <p>{text}</p>
-                </Trans>
-                <Link href={`/fleet/${name}`}>
-                  <a>
-                    <i className={`fas ${icon} fa-3x`} />
-                  </a>
-                </Link>
-              </div>
-            ))}
-          </div>
+          <div className='grid md:grid-cols-5 pb-10 gap-3'>{categories}</div>
         </div>
       </div>
     </Layout>

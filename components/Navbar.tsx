@@ -50,7 +50,7 @@ const Navbar = () => {
                       <Link href={href} key={index}>
                         <a
                           className={`${
-                            router.pathname == href
+                            router.pathname == href || (router.pathname.includes('fleet') && href.includes('fleet'))
                               ? 'bg-gray-900 text-white'
                               : 'text-gray-300 hover:bg-gray-700 hover:text-white'
                           }

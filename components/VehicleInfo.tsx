@@ -1,7 +1,7 @@
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
 import Image from 'next/image';
 
-type VehicleInfoProps = {
+type Props = {
   header: string;
   seats: string;
   info: string;
@@ -27,7 +27,7 @@ const options = {
   },
 };
 
-export default function VehicleInfo({ header, seats, info, images }: VehicleInfoProps) {
+export default function VehicleInfo({ header, seats, info, images }: Props) {
   return (
     <div className='mt-4 mb-6'>
       <h5 className='my-4 text-center'>{header}</h5>

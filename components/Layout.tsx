@@ -5,12 +5,12 @@ import Head from 'next/head';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-type LayoutProps = {
+type Props = {
   children: ReactNode;
   title: string;
 };
 
-const Layout = ({ children, title }: LayoutProps) => {
+const Layout = ({ children, title }: Props) => {
   const { t } = useTranslation('common');
 
   const router = useRouter();

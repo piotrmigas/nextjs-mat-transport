@@ -1,0 +1,67 @@
+export const data = [
+  {
+    header: 'buses8.mercedesavantgarde.header',
+    info: 'buses8.mercedesavantgarde.info',
+    seats: 'buses8.mercedesavantgarde.seats',
+    images: [
+      '/img/fleet/buses8/mercedes-v-avantgarde/1.jpg',
+      '/img/fleet/buses8/mercedes-v-avantgarde/2.jpg',
+      '/img/fleet/buses8/mercedes-v-avantgarde/3.jpg',
+      '/img/fleet/buses8/mercedes-v-avantgarde/4.jpg',
+      '/img/fleet/buses8/mercedes-v-avantgarde/5.jpg',
+      '/img/fleet/buses8/mercedes-v-avantgarde/6.jpg',
+    ],
+  },
+  {
+    header: 'buses8.mercedesvitoextralong.header',
+    info: 'buses8.mercedesvitoextralong.info',
+    seats: 'buses8.mercedesvitoextralong.seats',
+    images: [
+      '/img/fleet/buses8/mercedes-v-extralong/1.jpg',
+      '/img/fleet/buses8/mercedes-v-extralong/2.jpg',
+      '/img/fleet/buses8/mercedes-v-extralong/3.jpg',
+      '/img/fleet/buses8/mercedes-v-extralong/4.jpg',
+      '/img/fleet/buses8/mercedes-v-extralong/5.jpg',
+      '/img/fleet/buses8/mercedes-v-extralong/6.jpg',
+      '/img/fleet/buses8/mercedes-v-extralong/7.jpg',
+      '/img/fleet/buses8/mercedes-v-extralong/8.jpg',
+    ],
+  },
+  {
+    header: 'MINIBUS VIANO VIP',
+    info: 'buses8.minibusvianovip.info',
+    seats: 'buses8.minibusvianovip.seats',
+    images: [
+      '/img/fleet/buses8/minibus-viano-vip/1.jpg',
+      '/img/fleet/buses8/minibus-viano-vip/2.jpg',
+      '/img/fleet/buses8/minibus-viano-vip/3.jpg',
+      '/img/fleet/buses8/minibus-viano-vip/4.jpg',
+      '/img/fleet/buses8/minibus-viano-vip/5.jpg',
+      '/img/fleet/buses8/minibus-viano-vip/6.jpg',
+    ],
+  },
+  {
+    header: 'MINIBUS VIANO 2.2 CDI',
+    info: 'buses8.minibusvianocdi.info',
+    seats: 'buses8.minibusvianovip.seats',
+    images: [
+      '/img/fleet/buses8/minibus-viano-cdi/1.jpg',
+      '/img/fleet/buses8/minibus-viano-cdi/2.jpg',
+      '/img/fleet/buses8/minibus-viano-cdi/3.jpg',
+      '/img/fleet/buses8/minibus-viano-cdi/4.jpg',
+      '/img/fleet/buses8/minibus-viano-cdi/5.jpg',
+    ],
+  },
+  {
+    header: 'MERCEDES VITO 111CDI/115CDI',
+    info: 'buses8.mercedesvito111.info',
+    seats: 'buses8.mercedesvito111.seats',
+    images: [
+      '/img/fleet/buses8/mercedes-vito-111/1.jpg',
+      '/img/fleet/buses8/mercedes-vito-111/2.jpg',
+      '/img/fleet/buses8/mercedes-vito-111/3.jpg',
+      '/img/fleet/buses8/mercedes-vito-111/4.jpg',
+      '/img/fleet/buses8/mercedes-vito-111/5.jpg',
+    ],
+  },
+];
