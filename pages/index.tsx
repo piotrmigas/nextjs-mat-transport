@@ -9,14 +9,13 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Carousel from 'react-responsive-carousel/lib/js/components/Carousel/index';
 import Layout from '../components/Layout';
 import { showcaseImgs } from '../data/showcaseImgs';
-import { LightboxOptions } from '../types';
 import { GetStaticProps } from 'next';
 
-type HomeProps = {
+type Props = {
   customLightbox: LightboxOptions;
 };
 
-const Home = ({ customLightbox }: HomeProps) => {
+const Home = ({ customLightbox }: Props) => {
   const [imgLoaded, setImgLoaded] = useState(false);
   const [covid1Img, setCovid1Img] = useState('covid1');
   const [covid2Img, setCovid2Img] = useState('covid2');

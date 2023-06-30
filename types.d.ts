@@ -1,4 +1,4 @@
-export interface LightboxOptions {
+type LightboxOptions = {
   buttons: {
     showDownloadButton: boolean;
     showFullscreenButton: boolean;
@@ -20,4 +20,4 @@ export interface LightboxOptions {
   caption: {
     showCaption: boolean;
   };
-}
+};

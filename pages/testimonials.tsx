@@ -4,14 +4,13 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
-import { LightboxOptions } from '../types';
 import { GetStaticProps } from 'next';
 
-type TestimonialsProps = {
+type Props = {
   customLightbox: LightboxOptions;
 };
 
-const Testimonials = ({ customLightbox }: TestimonialsProps) => {
+const Testimonials = ({ customLightbox }: Props) => {
   const { t } = useTranslation('common');
 
   return (
