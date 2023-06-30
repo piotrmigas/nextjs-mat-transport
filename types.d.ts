@@ -1,3 +1,5 @@
+declare module 'react-responsive-carousel/lib/js/components/Carousel/index';
+
 type LightboxOptions = {
   buttons: {
     showDownloadButton: boolean;
