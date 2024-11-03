@@ -13,6 +13,7 @@ export default function Document() {
           crossOrigin='anonymous'
           referrerPolicy='no-referrer'
         />
+        <link rel='canonical' href='https://mattransport.vercel.app' />
       </Head>
       <body className='bg-carbon text-white'>
         <Main />

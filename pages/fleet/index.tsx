@@ -24,7 +24,7 @@ const Fleet = () => {
           <Trans>
             <p>{t(text)}</p>
           </Trans>
-          <Link href={`/fleet/${name}`}>
+          <Link href={`/fleet/${name}`} aria-label='Fleet'>
             <a>
               <i className={`fas ${icon} fa-3x`} />
             </a>

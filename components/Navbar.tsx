@@ -10,12 +10,12 @@ const Navbar = () => {
   const { t } = useTranslation('common');
 
   const navigation = [
-    { name: <i className='fas fa-home' />, href: '/' },
-    { name: t`navbar.about`, href: '/about' },
-    { name: t`navbar.fleet`, href: '/fleet' },
-    { name: t`navbar.testimonials`, href: '/testimonials' },
-    { name: t`navbar.contact`, href: '/contact' },
-    { name: 'Mat Sport', href: '/sport' },
+    { name: <i className='fas fa-home' />, href: '/', ariaLabel: 'Home' },
+    { name: t`navbar.about`, href: '/about', ariaLabel: 'About' },
+    { name: t`navbar.fleet`, href: '/fleet', ariaLabel: 'Fleet' },
+    { name: t`navbar.testimonials`, href: '/testimonials', ariaLabel: 'Testimonials' },
+    { name: t`navbar.contact`, href: '/contact', ariaLabel: 'Contact' },
+    { name: 'Mat Sport', href: '/sport', ariaLabel: 'Sport' },
   ];
 
   return (
@@ -38,16 +38,16 @@ const Navbar = () => {
               </div>
               <div className='flex-1 flex items-center justify-center md:items-stretch md:justify-start'>
                 <div className='flex-shrink-0 flex items-center'>
-                  <Link href='/'>
-                    <a className='block h-8 w-auto md:hidden lg:block' aria-label='logo'>
+                  <Link href='/' aria-label='Home Logo'>
+                    <a className='block h-8 w-auto md:hidden lg:block'>
                       <Image src='/img/logo.png' alt='' width={52} height={32} />
                     </a>
                   </Link>
                 </div>
                 <div className='hidden md:block md:mx-auto'>
                   <div className='flex space-x-4'>
-                    {navigation.map(({ name, href }, index) => (
-                      <Link href={href} key={index}>
+                    {navigation.map(({ name, href, ariaLabel }, index) => (
+                      <Link href={href} key={index} aria-label={ariaLabel}>
                         <a
                           className={`${
                             router.pathname == href || (router.pathname.includes('fleet') && href.includes('fleet'))
@@ -64,12 +64,12 @@ const Navbar = () => {
                 </div>
               </div>
               <div className='absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0'>
-                <Link href={router.pathname} locale='pl'>
+                <Link href={router.pathname} locale='pl' aria-label='PL language'>
                   <a className='mr-3 hidden sm:block mt-1'>
                     <Image src='/img/langPl.png' alt='' className='object-cover w-5 h-5' width={20} height={20} />
                   </a>
                 </Link>
-                <Link href={router.pathname} locale='en'>
+                <Link href={router.pathname} locale='en' aria-label='EN language'>
                   <a className='mr-3 hidden sm:block mt-1'>
                     <Image src='/img/langEn.png' alt='' className='object-cover w-5 h-5' width={20} height={20} />
                   </a>
@@ -97,8 +97,8 @@ const Navbar = () => {
           </div>
           <Disclosure.Panel className='md:hidden'>
             <div className='px-2 pt-2 pb-3 space-y-1'>
-              {navigation.map(({ name, href }, index) => (
-                <Link href={href} key={index}>
+              {navigation.map(({ name, href, ariaLabel }, index) => (
+                <Link href={href} key={index} aria-label={ariaLabel}>
                   <a
                     className={`${
                       router.pathname == href && 'bg-gray-900 text-white'
@@ -110,12 +110,12 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className='flex justify-center'>
-                <Link href={router.pathname} locale='pl'>
+                <Link href={router.pathname} locale='pl' aria-label='PL language'>
                   <a className='block sm:hidden mx-2 py-3'>
                     <Image src='/img/langPl.png' alt='' width={20} height={20} className='object-cover w-5 h-5' />
                   </a>
                 </Link>
-                <Link href={router.pathname} locale='en'>
+                <Link href={router.pathname} locale='en' aria-label='EN language'>
                   <a className='block sm:hidden mx-2 py-3'>
                     <Image src='/img/langEn.png' alt='' className='object-cover w-5 h-5' width={20} height={20} />
                   </a>
