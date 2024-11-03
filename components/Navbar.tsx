@@ -1,8 +1,11 @@
+import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import { useTranslation } from 'next-i18next';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faSquareFull } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
 
 const Navbar = () => {
@@ -10,7 +13,7 @@ const Navbar = () => {
   const { t } = useTranslation('common');
 
   const navigation = [
-    { name: <i className='fas fa-home' />, href: '/', ariaLabel: 'Home' },
+    { name: <FontAwesomeIcon icon={faHome} />, href: '/', ariaLabel: 'Home' },
     { name: t`navbar.about`, href: '/about', ariaLabel: 'About' },
     { name: t`navbar.fleet`, href: '/fleet', ariaLabel: 'Fleet' },
     { name: t`navbar.testimonials`, href: '/testimonials', ariaLabel: 'Testimonials' },
@@ -81,7 +84,7 @@ const Navbar = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <i className='fab fa-facebook-square' />
+                  <FontAwesomeIcon icon={faFacebookSquare} />
                 </a>
                 <a
                   href='https://www.instagram.com/mattransport'
@@ -90,7 +93,7 @@ const Navbar = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <i className='fab fa-instagram' />
+                  <FontAwesomeIcon icon={faInstagram} mask={faSquareFull} />
                 </a>
               </div>
             </div>
@@ -127,7 +130,7 @@ const Navbar = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <i className='fab fa-facebook-square mt-0.5' />
+                  <FontAwesomeIcon icon={faFacebookSquare} className='mt-0.5' />
                 </a>
                 <a
                   href='https://www.instagram.com/mattransport'
@@ -136,7 +139,7 @@ const Navbar = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <i className='fab fa-instagram mt-0.5' />
+                  <FontAwesomeIcon icon={faInstagram} mask={faSquareFull} className='mt-0.5' />
                 </a>
               </div>
             </div>

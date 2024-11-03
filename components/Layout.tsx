@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import { ReactNode } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Head from 'next/head';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -39,7 +41,7 @@ const Layout = ({ children, title }: Props) => {
           rel='noreferrer'
           aria-label='Whatsapp'
         >
-          <i className='fab fa-whatsapp no-underline' />
+          <FontAwesomeIcon icon={faWhatsapp} />
         </a>
       </div>
       <Footer />

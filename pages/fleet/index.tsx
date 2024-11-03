@@ -5,28 +5,36 @@ import Layout from '../../components/Layout';
 import PageHeader from '../../components/PageHeader';
 import { GetStaticProps } from 'next';
 import { useMemo } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCar, faShuttleVan, faBus } from '@fortawesome/free-solid-svg-icons';
 
 const Fleet = () => {
   const { t } = useTranslation('common');
 
   const icons = [
-    { name: 'cars', icon: 'fa-car', text: 'fleet.cars' },
-    { name: 'buses8', icon: 'fa-shuttle-van', text: 'fleet.buses8' },
-    { name: 'buses21', icon: 'fa-shuttle-van', text: 'fleet.buses21' },
-    { name: 'coaches33', icon: 'fa-bus', text: 'fleet.coaches33' },
-    { name: 'coaches55', icon: 'fa-bus', text: 'fleet.coaches55' },
+    { name: 'cars', text: 'fleet.cars' },
+    { name: 'buses8', text: 'fleet.buses8' },
+    { name: 'buses21', text: 'fleet.buses21' },
+    { name: 'coaches33', text: 'fleet.coaches33' },
+    { name: 'coaches55', text: 'fleet.coaches55' },
   ];
+
+  const getIcon = (name: string) => {
+    if (name.includes('buses')) return faShuttleVan;
+    if (name.includes('coaches')) return faBus;
+    return faCar;
+  };
 
   const categories = useMemo(
     () =>
-      icons.map(({ icon, text, name }) => (
+      icons.map(({ text, name }) => (
         <div className='grid sm:grid-rows-2 gap-3 text-center justify-center items-center' key={text}>
           <Trans>
             <p>{t(text)}</p>
           </Trans>
           <Link href={`/fleet/${name}`} aria-label='Fleet'>
             <a>
-              <i className={`fas ${icon} fa-3x`} />
+              <FontAwesomeIcon icon={getIcon(name)} className='fa-3x' />
             </a>
           </Link>
         </div>

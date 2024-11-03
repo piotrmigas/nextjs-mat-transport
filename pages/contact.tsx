@@ -2,12 +2,14 @@ import { useState } from 'react';
 import { GetStaticProps } from 'next';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation, Trans } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Watch as Loader } from 'react-loader-spinner';
 import Form from '../components/Form';
 import Layout from '../components/Layout';
 import PageHeader from '../components/PageHeader';
+import { faMapMarkerAlt, faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
   const { t } = useTranslation('common');
@@ -26,7 +28,7 @@ const Contact = () => {
               <div className='grid grid-cols-6 mb-4 text-sm'>
                 <div className='col-start-1 sm:col-start-2 col-span-5 sm:col-span-4'>
                   <div className='grid grid-cols-3 items-center'>
-                    <i className='fas fa-map-marker-alt text-3xl text-center' />
+                    <FontAwesomeIcon icon={faMapMarkerAlt} className='text-3xl text-center' />
                     <div className='col-span-2'>
                       <h6 className='font-semibold'>{t`contact.h1`}</h6>
                       <p>
@@ -51,7 +53,7 @@ const Contact = () => {
               <div className='grid grid-cols-6 text-sm'>
                 <div className='col-start-1 sm:col-start-2 col-span-5 sm:col-span-4'>
                   <div className='grid grid-cols-3 items-center'>
-                    <i className='fas fa-phone-volume text-3xl text-center' />
+                    <FontAwesomeIcon icon={faPhoneVolume} className='text-3xl text-center' />
                     <div className='col-span-2'>
                       <h6 className='font-semibold text-'>{t`contact.h3`}</h6>
                       <p>+48 695 57 40 28</p>

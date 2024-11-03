@@ -38,32 +38,30 @@
 
 /* Font Awesome */
 
-.fa-facebook-square {
+.fa-square-facebook {
   color: #3b5998;
   font-size: 24px;
 }
 
 .fa-instagram {
   font-size: 24px;
-  background: #d6249f;
+  color: rgb(31 41 55);
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .fa-car,
-.fa-shuttle-van,
+.fa-van-shuttle,
 .fa-bus {
   color: #3b5998;
 }
 
-.fa-map-marker-alt {
+.fa-location-dot {
   color: cadetblue;
 }
 
 .fa-phone-volume {
   color: coral;
+  rotate: 45deg;
 }
 
 /* Lightbox */
