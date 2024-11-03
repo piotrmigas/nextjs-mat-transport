@@ -28,7 +28,7 @@ const Contact = () => {
               <div className='grid grid-cols-6 mb-4 text-sm'>
                 <div className='col-start-1 sm:col-start-2 col-span-5 sm:col-span-4'>
                   <div className='grid grid-cols-3 items-center'>
-                    <FontAwesomeIcon icon={faMapMarkerAlt} className='text-3xl text-center' />
+                    <FontAwesomeIcon icon={faMapMarkerAlt} className='text-3xl mx-auto' />
                     <div className='col-span-2'>
                       <h6 className='font-semibold'>{t`contact.h1`}</h6>
                       <p>
@@ -53,7 +53,7 @@ const Contact = () => {
               <div className='grid grid-cols-6 text-sm'>
                 <div className='col-start-1 sm:col-start-2 col-span-5 sm:col-span-4'>
                   <div className='grid grid-cols-3 items-center'>
-                    <FontAwesomeIcon icon={faPhoneVolume} className='text-3xl text-center' />
+                    <FontAwesomeIcon icon={faPhoneVolume} className='text-3xl mx-auto' />
                     <div className='col-span-2'>
                       <h6 className='font-semibold text-'>{t`contact.h3`}</h6>
                       <p>+48 695 57 40 28</p>
