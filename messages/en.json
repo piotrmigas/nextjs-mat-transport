@@ -1,0 +1,171 @@
+{
+  "description": "We offer coach rental, bus and minibus rental, and passenger car rental with a driver. Modern vehicles and experienced drivers are our standard. Mat Transport, Krakow",
+  "title": "Coach and bus rental | Mat Transport Krakow",
+  "navbar": {
+    "about": "About Us",
+    "fleet": "Fleet",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "home": {
+    "header": "Rental of comfortable coaches and minibuses",
+    "content": "Mat Transport offers rental of coaches, buses, minibuses and passenger cars. We provide services at the highest European level. We guarantee favorable payment terms and prices. Of course, there is a possibility of negotiation, we can tailor the offer to each client. We have a modern fleet of vehicles, from luxury passenger cars that can be rented with a driver, through buses of various sizes, to comfortable coaches. We serve clients in the field of passenger transport, both individual and group. We rent our vehicles for conferences, events, transfers and tours. Thanks to the wide base of vehicles, we can prepare an offer for one person as well as a group of 50 people."
+  },
+  "about": {
+    "header": "About us",
+    "p1": "As a company <strong>Mat Transport</strong> we started our activity in 1987 in Krakow. We specialize in renting coaches, buses and high-class passenger cars. We cooperate with the best Polish and foreign travel agencies. We provide services to the highest state offices, international concerns and banks. Our offer includes tour service, airport transfers, transport service during conferences, etc. Our offer is addressed to both companies and individual clients, both Polish and foreign.",
+    "p2": "The fleet of <strong>Mat Transport</strong> are only modern vehicles with equipment that guarantees the highest safety and travel comfort. Passenger cars are limousines of the brands Audi, Mercedes and BMW. We offer their rental with a driver. Mercedes buses and Setra, Neoplan, Mercedes and Iveco coaches at our disposal are comfortable vehicles that can provide transport for 5-50 people.",
+    "p3": "Our drivers are characterized by high personal culture, high professional qualifications and many years of professional qualifications. experience, this ensures that you will reach your destination in a safe and friendly manner. Drivers serving foreign clients, speak English.",
+    "p4": "The company has a license to perform domestic and international passenger transport (license number 0001312) and a certificate of professional competence (no. 01301 / F3 / 03)."
+  },
+  "fleet": {
+    "header": "Coaches, buses and passenger cars for",
+    "title": "We offer you comfortable coaches, buses and minibuses as well as the possibility of renting luxury passenger cars with a driver.",
+    "content": "Mat Transport's offer of coach, bus and passenger car rental is addressed to individual customers, companies and travel agencies, to all those interested in transport services at the highest level. We provide our services both in Poland and abroad. Our offer includes domestic and foreign airport transfers, transport service during conferences, state events and events, service for round trips and pilgrimages, and organized trips to various types of sports and cultural events, as well as many other services. We also serve VIP clients, the class of our vehicles guarantees the highest level of service.",
+    "cars": "Cars",
+    "buses8": "Buses 6-8<br/>seats",
+    "buses21": "Buses 16-21<br/>seats",
+    "coaches33": "Coaches up to<br/>33 seats",
+    "coaches55": "Coaches up to<br/>55 seats"
+  },
+  "cars": {
+    "header": "Passenger cars with a rental driver",
+    "mercedese2018": {
+      "header": "MERCEDES E CLASS VIP EXCLUSIVE 2018",
+      "seats": "number of seats 4+1",
+      "info": "interior: luxury version with full equipment, including: leather upholstery, wooden finishes, automatic two-zone air conditioning, air suspension, ambiente lighting, high-class sound, CD, USB, tinted windows for passengers, GPS live traffic, etc."
+    },
+    "mercedese2019": {
+      "header": "MERCEDES E CLASS VIP EXCLUSIVE 2019",
+      "seats": "number of seats 4+1",
+      "info": "interior: luxury version with full equipment, including: leather upholstery, wooden finishes, automatic two-zone air conditioning, air suspension, ambiente lighting, high-class sound, CD, USB, tinted windows for passengers, GPS live traffic, etc."
+    },
+    "bmw5black": {
+      "header": "BMW 5 Series VIP 2015",
+      "seats": "number of seats 4+1",
+      "info": "interior: luxury version with full equipment, including: leather upholstery, wooden finishes, automatic two-zone air conditioning, air suspension, ambiente lighting, high-class sound, CD, USB, tinted windows for passengers, GPS live traffic, etc."
+    },
+    "bmw5blue": {
+      "header": "BMW 5 Series VIP 2014",
+      "seats": "number of seats 4+1",
+      "info": "interior: luxury version with full equipment, including: leather upholstery, wooden finishes, automatic two-zone air conditioning, cd, tinted windows for passengers, gps, english spoken driver on request."
+    }
+  },
+  "buses8": {
+    "header": "Buses for rent 6-8 seats",
+    "mercedesavantgarde": {
+      "header": "MERCEDES V-CLASS AVANTGARDE 2016",
+      "seats": "number of seats 6+1",
+      "info": "interior: black metallic, automatic four-zone air conditioning, leather upholstery, adjustable seats with armrests, wooden trim, ambiente lighting, tinted windows in the passenger compartment, GPS, cd, usb.",
+      "info2": "The most luxurious van produced today, air suspension with individual leather seats will ensure maximum comfort, each seat has a full range of adjustments, the possibility of any interior arrangement allows, among others, for the conference seating system, each passenger can individually select the temperature through their own air conditioning control panel, the whole is complemented by the highest quality sound system, wooden finishes and ambient lighting, a number of safety systems with which the car is equipped ensures a safe journey, Mercedes V 2015 allows you to travel in the most comfortable and safe conditions."
+    },
+    "mercedesvito111": {
+      "seats": "number of seats 8+1",
+      "info": "interior: tourist version, comfort adjustable seats, air conditioning, cd, tinted windows in the passenger compartment, drink holders, GPS, driver with English or Dutch on request."
+    },
+    "mercedesvitoextralong": {
+      "header": "MERCEDES VITO/V-CLASS EXTRA LONG 2017",
+      "seats": "number of seats 7+1",
+      "info": "interior: black metallic, air conditioning and two-zone automatic heating, webasto, adjustable seats with armrests, individual lighting, the possibility of conference or standard seat setting, tinted windows in the passenger compartment, cd, drink holders, GPS, extended version with a very large space for luggage , driver with English on request."
+    },
+    "minibusvianocdi": {
+      "seats": "number of seats 5+1",
+      "info": "interior: luxury version, air conditioning and dual-zone heating, webasto, individual adjustable seats, sliding and rotating armrests, individual lighting, possibility of conference or standard seat positioning, tinted windows in the passenger compartment, cd, drink holders, GPS, driver with in English or Dutch."
+    },
+    "minibusvianovip": {
+      "seats": "number of seats 7+1",
+      "info": "interior: luxury version, half-leather upholstery, air conditioning and dual-zone heating, webasto, adjustable seats with armrests, individual lighting, possibility of conference or standard seat positioning, tinted windows in the passenger space, cd, drink holders, GPS, driver with English on request"
+    }
+  },
+  "buses21": {
+    "header": "Buses for rent 16-21 seats",
+    "mercedessprinter2020": {
+      "seats": "number of seats 20+1",
+      "info": "interior: VIP version, black metallic, leather upholstery, wooden decorative finishes, atmospheric ambiente lighting, adjustable, sliding seats with armrests, automatic air conditioning with individual air vents, webasto, dvd / cd, lcd monitor, tinted windows, microphone, euro 6."
+    },
+    "mercedessprinter2013": {
+      "seats": "number of seats 21+1",
+      "info": "interior: tourist version, adjustable seats with armrests and footrests, automatic air conditioning with individual air vents, webasto, lighting, dvd / cd, lcd monitor, automatic step to facilitate boarding, tinted windows, microphone, euro 5."
+    }
+  },
+  "coaches33": {
+    "header": "Coaches for rent up to 33 seats",
+    "ivecomago2silver": {
+      "seats": "number of seats 30+1",
+      "info": "interior: automatic air conditioning with individual air vents, webasto, microphone, comfortable fold-out seats with armrests with a very large space for legs, DVD / CD, monitor, lighting, tinted windows, seat belts on all seats, spacious bus with very large spacing between seats very large space for luggage."
+    },
+    "ivecomago2white": {
+      "seats": "number of seats 32+1",
+      "info": "interior: automatic air conditioning with individual air vents, webasto, microphone, comfortable fold-out seats with armrests with a very large legroom, dvd / cd, monitor x 2, lighting, tinted windows, seat belts on all seats, spacious bus with very large gaps between armchairs, a very large space for luggage."
+    },
+    "ivecorosero": {
+      "seats": "number of seats 30+1",
+      "info": "interior: automatic air conditioning with individual air vents, usb sockets, 220v sockets for charging laptops, webasto, microphone x 2, semi-leather, comfortable fold-out armchairs with armrests with a very large legroom, fridge, dvd / cd, monitor x 2, lighting, tinted windows, safety belts on all seats, spacious bus with very large gaps between the seats, large luggage space."
+    }
+  },
+  "coaches55": {
+    "header": "Coaches for rent up to 55 seats",
+    "mercedes350": {
+      "seats": "number of seats 49+2",
+      "info": "interior: air conditioning, toilet, dvd / cd, gps, microphone, tables, seat belts, abs, asr, telma, fridge, bar, toilet, tinted windows, ac / oc / nnw insurance."
+    },
+    "mercedesturismo": {
+      "seats": "number of seats 53+2",
+      "info": "interior: air conditioning, toilet, dvd / cd, gps, microphone, seat belts, abs, asr, retarder, fridge, bar, toilet, tinted windows, ac / oc / nnw insurance."
+    },
+    "neoplaneuroliner": {
+      "seats": "number of seats 49+2",
+      "info": "interior: air conditioning, toilet, dvd / cd, gps, microphone, tables, seat belts, abs, asr, telma, fridge, bar, toilet, tinted windows, ac / oc / nnw insurance."
+    },
+    "setra415": {
+      "seats": "number of seats 49+2",
+      "info": "interior: air conditioning, toilet, dvd / cd, gps, microphone, tables, seat belts, abs, asr, telma, fridge, bar, toilet, tinted windows, ac / oc / nnw insurance."
+    }
+  },
+  "testimonials": {
+    "header": "Testimonials",
+    "title": "The <strong>MAT TRANSPORT</strong> company has been operating since 1987.",
+    "p1": "From the beginning of our activity, we provide services at the highest level. We can boast of many successes, as evidenced by the satisfaction of contractors, letters of praise from our clients and numerous diplomas and certificates.",
+    "img1": "Close cooperation with BOR during the visit of <strong>US President Barack Obama</strong> - Warsaw, May 2011",
+    "img2": "Visit of <strong>US President G.W. Busch</strong> - Krakow, May 2003",
+    "img3": "Meeting of the ministers of culture of the European Union countries - Krakow, October 14-16, 2004",
+    "img4": "Group of swiss tourists - 14-15.08.2009",
+    "p2": "Support for countless tourist clients, both group and individual (sightseeing, transfers, trips). As proof of customer satisfaction, we attach a few scans with thanks for our service.",
+    "li1": "Transport service during the 21st ECONOMIC FORUM KRYNICA 2011 (POLSKA ENERGY ECONOMY), providing individual transport for <strong>PREMIERE OF JAN KRZYSZTOF BIELECKI</strong>.",
+    "li2": "Cooperation with <strong>BOR</strong> in the field of moving in the <strong>PRESIDENTIAL COLUMN OF THE CZECH, UKRAINE, CROATIA AND BULGARIA GOVERNMENTS</strong>.",
+    "li3": "Provision of service for <strong>MAYOR OF ROME AND PRESIDENT OF TUSCANY 2011</strong>.",
+    "li4": "Transport service for the Italian pilgrimage group of 560 people, February 24-28, 2011.",
+    "li5": "Transport service for the Italian pilgrimage group of 970 people, April 2011.",
+    "li6": "Our cars were used during the presidency of the European Union in 2011.",
+    "li7": "Conference support <strong>PFIZER</strong>, <strong>ROCHE</strong>, <strong>PHILIP MORRIS</strong>, <strong>ING</strong> ...",
+    "li8": "Cooperation with people from the world of show business and culture."
+  },
+  "contact": {
+    "header": "Contact",
+    "name": "MAT TRANSPORT",
+    "h1": "CORRESPONDENCE ADDRESS",
+    "p1": "UŚMIECH 8/3<br/>30-560 KRAKOW",
+    "h2": "OFFICE ADDRESS",
+    "p2": "WODNA 4<br/>30-556 KRAKOW<br/>OPENING HOURS:<br/>MON.-FRI. 10-17",
+    "h3": "PHONE NUMBERS",
+    "formHeader": "Contact Us",
+    "formName": "First name",
+    "formLastName": "Last name",
+    "formPhone": "Phone",
+    "formDate": "Transfer date",
+    "formMessage": "Message",
+    "formTextarea": "Your message...",
+    "formBtn": "Submit",
+    "alertSuccess": "Message sent",
+    "alertError": "Error"
+  },
+  "sport": {
+    "ul": "MAT SPORT team achievements:",
+    "li1": "1st place in the Rally Wisła, class E 30 - Round of the Polish Cup 2011",
+    "li2": "3rd place in Rally Elmot / Świdnicki in class N2 - Round of the Polish Cup 2010",
+    "li3": "3rd place in the Krakow Rally in N2 class - Polish Cup Round 2010",
+    "li4": "Vice leaders of the N2 POLISH CUP classification after 5 rounds in 2010",
+    "li5": "Vice champions of the Krakow district in the general classification - 2008",
+    "li6": "Krakow District Masters in Class to capacity 2000cm3 - 2008"
+  }
+}
