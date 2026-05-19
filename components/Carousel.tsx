@@ -2,28 +2,31 @@
 
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
+import { useEffect } from 'react';
 
-const Carousel = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [Autoplay()]);
+type CarouselProps = {
+  images: string[];
+};
 
-  const goToPrev = () => emblaApi?.scrollPrev();
-  const goToNext = () => emblaApi?.scrollNext();
+const Carousel = ({ images }: CarouselProps) => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    emblaApi.plugins().autoplay?.play();
+  }, [emblaApi]);
 
   return (
     <div className='embla'>
       <div className='embla__viewport' ref={emblaRef}>
         <div className='embla__container'>
-          <div className='embla__slide'>Slide 1</div>
-          <div className='embla__slide'>Slide 2</div>
-          <div className='embla__slide'>Slide 3</div>
+          {images.map((src, index) => (
+            <div className='embla__slide' key={index}>
+              <img src={src} alt='' width='900' height='460' />
+            </div>
+          ))}
         </div>
       </div>
-      <button className='embla__prev' onClick={goToPrev}>
-        Scroll to prev
-      </button>
-      <button className='embla__next' onClick={goToNext}>
-        Scroll to next
-      </button>
     </div>
   );
 };

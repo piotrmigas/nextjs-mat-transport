@@ -1,26 +1,83 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.embla__viewport {
+  overflow: hidden;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.bg-carbon {
+  background: #111 url('/img/carbon-bg.webp');
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('/img/glow.webp') top center no-repeat;
+}
+
+.content-wrap {
+  flex: 1;
+}
+
+/*Whatsapp btn*/
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  background-color: #25d366;
+  border-radius: 50px;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Font Awesome */
+
+.fa-square-facebook {
+  color: #3b5998;
+  font-size: 24px;
+}
+
+.fa-instagram {
+  font-size: 24px;
+  color: rgb(31 41 55);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.fa-car,
+.fa-van-shuttle,
+.fa-bus {
+  color: #3b5998;
+}
+
+.fa-location-dot {
+  color: cadetblue;
+}
+
+.fa-phone-volume {
+  color: coral;
+  rotate: 45deg;
+}
+
+/* Lightbox */
+
+.SRLOpened {
+  margin: 0 !important;
 }

@@ -2,6 +2,9 @@ import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import '../globals.css';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -34,8 +37,12 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      <body className='bg-carbon text-white'>
+        <NextIntlClientProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

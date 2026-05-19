@@ -5,12 +5,13 @@ import Img from 'next/image';
 //import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { motion } from 'framer-motion';
 import Layout from './layout';
-//import { showcaseImgs } from '../data/showcaseImgs';
 //import { GetStaticProps } from 'next';
 import { Locale, useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import Carousel from '@/components/Carousel';
 import LocaleSwitcher from '@/components/Switcher';
+import { showcaseImgs } from '@/images';
+import FadeIn from '@/components/FadeIn';
 
 type Props = {
   customLightbox: any;
@@ -59,40 +60,14 @@ const Home = ({ params }: PageProps<'/[locale]'>) => {
   // }, []);
 
   return (
-    // <motion.div
-    //   initial='hidden'
-    //   animate='visible'
-    //   variants={{
-    //     hidden: {
-    //       opacity: 0,
-    //     },
-    //     visible: {
-    //       opacity: 1,
-    //     },
-    //   }}
-    // >
-    <div className='mx-auto max-w-4xl'>
-      <h4 className='text-center py-5 px-10'>{t('header')}</h4>
-      <div className='pb-12'>
-        <LocaleSwitcher />
-        <Carousel />
-        {/* <Carousel
-              autoPlay
-              infiniteLoop
-              showStatus={false}
-              showThumbs={false}
-              showIndicators={false}
-              animationHandler='fade'
-              interval={4000}
-            >
-              {showcaseImgs.map(({ id, src }) => (
-                  <div key={id}>
-                     <img src={src} alt='' width='900' height='460' />
-                  </div>
-                ))}
-            </Carousel> */}
-      </div>
-      {/* <SimpleReactLightbox>
+    <FadeIn>
+      <div className='mx-auto max-w-4xl'>
+        <h4 className='text-center py-5 px-10'>{t('header')}</h4>
+        <div className='pb-12'>
+          <LocaleSwitcher />
+          <Carousel images={showcaseImgs} />
+        </div>
+        {/* <SimpleReactLightbox>
             <SRLWrapper options={customLightbox}>
               <div className='flex justify-center items-center gap-4 max-w-3xl px-8 flex-wrap sm:flex-nowrap mx-auto'>
                 <Img
@@ -112,9 +87,9 @@ const Home = ({ params }: PageProps<'/[locale]'>) => {
               </div>
             </SRLWrapper>
           </SimpleReactLightbox> */}
-      <p className='py-8 px-8'>{t('content')}</p>
-    </div>
-    // </motion.div>
+        <p className='py-8 px-8'>{t('content')}</p>
+      </div>
+    </FadeIn>
   );
 };
 
