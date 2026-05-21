@@ -9,7 +9,6 @@ import Layout from './layout';
 import { Locale, useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import Carousel from '@/components/Carousel';
-import LocaleSwitcher from '@/components/Switcher';
 import { showcaseImgs } from '@/images';
 import FadeIn from '@/components/FadeIn';
 
@@ -64,7 +63,6 @@ const Home = ({ params }: PageProps<'/[locale]'>) => {
       <div className='mx-auto max-w-4xl'>
         <h4 className='text-center py-5 px-10'>{t('header')}</h4>
         <div className='pb-12'>
-          <LocaleSwitcher />
           <Carousel images={showcaseImgs} />
         </div>
         {/* <SimpleReactLightbox>

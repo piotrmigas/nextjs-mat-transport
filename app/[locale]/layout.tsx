@@ -5,6 +5,8 @@ import { getTranslations } from 'next-intl/server';
 import '../globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -38,11 +40,22 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body className='bg-carbon text-white'>
-        <NextIntlClientProvider>
-          <Navbar />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
+        <div className='page-container'>
+          <NextIntlClientProvider>
+            <Navbar />
+            {children}
+            <a
+              href='https://api.whatsapp.com/send?phone=48695574028'
+              className='whatsapp-button'
+              target='_blank'
+              rel='noreferrer'
+              aria-label='Whatsapp'
+            >
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </a>
+            <Footer />
+          </NextIntlClientProvider>
+        </div>
       </body>
     </html>
   );

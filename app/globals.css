@@ -1,28 +1,14 @@
 @import 'tailwindcss';
 
-.embla__viewport {
-  overflow: hidden;
-}
-
-.embla__container {
-  display: flex;
-  touch-action: pan-y pinch-zoom;
-}
-
-.embla__slide {
-  flex: 0 0 100%;
-  min-width: 0;
-}
-
 .bg-carbon {
-  background: #111 url('/img/carbon-bg.webp');
+  background: #111 url('/images/carbon-bg.webp');
 }
 
 .page-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: url('/img/glow.webp') top center no-repeat;
+  background: url('/images/glow.webp') top center no-repeat;
 }
 
 .content-wrap {
@@ -58,7 +44,6 @@
 .fa-instagram {
   font-size: 24px;
   color: rgb(31 41 55);
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
 }
 
 .fa-car,
@@ -74,6 +59,22 @@
 .fa-phone-volume {
   color: coral;
   rotate: 45deg;
+}
+
+/* Carousel */
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
 }
 
 /* Lightbox */
