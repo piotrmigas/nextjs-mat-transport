@@ -23,15 +23,15 @@ const Navbar = () => {
   };
 
   const navigation = [
-    { name: <FontAwesomeIcon icon={faHome} />, href: '/', ariaLabel: 'Home' },
-    { name: t('about'), href: '/about', ariaLabel: 'About' },
-    { name: t('fleet'), href: '/fleet', ariaLabel: 'Fleet' },
-    { name: t('testimonials'), href: '/testimonials', ariaLabel: 'Testimonials' },
-    { name: t('contact'), href: '/contact', ariaLabel: 'Contact' },
-    { name: 'Mat Sport', href: '/sport', ariaLabel: 'Sport' },
+    { name: <FontAwesomeIcon icon={faHome} />, href: '/', ariaLabel: t('home') },
+    { name: t('about'), href: '/about', ariaLabel: t('about') },
+    { name: t('fleet'), href: '/fleet', ariaLabel: t('fleet') },
+    { name: t('testimonials'), href: '/testimonials', ariaLabel: t('testimonials') },
+    { name: t('contact'), href: '/contact', ariaLabel: t('contact') },
+    { name: 'Mat Sport', href: '/sport', ariaLabel: 'Mat Sport' },
   ];
 
-  const langBtns = [
+  const langButtons = [
     {
       src: '/images/langPl.png',
       alt: 'Polish',
@@ -88,22 +88,22 @@ const Navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className='absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0'>
-                {langBtns.map(({ src, alt, locale }) => (
+              <div className='absolute inset-y-0 right-0 hidden md:flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0'>
+                {langButtons.map(({ src, alt, locale }) => (
                   <Image
                     key={locale}
                     src={src}
                     alt={alt}
-                    className='object-cover w-5 h-5 mr-3 hidden sm:block mt-1 cursor-pointer'
+                    className={`object-cover ${alt === 'Polish' ? 'mr-3' : 'mr-2'} hidden sm:block cursor-pointer`}
                     width={20}
                     height={20}
                     onClick={() => switchLocale(locale)}
                   />
                 ))}
                 <a
-                  href='https://facebook.com/mattransport'
+                  href='https://facebook.com/mattransportkrakow'
                   aria-label='Facebook'
-                  className='hidden sm:block mr-3 mt-1'
+                  className='hidden sm:flex mr-1 items-center'
                   target='_blank'
                   rel='noreferrer'
                 >
@@ -112,14 +112,14 @@ const Navbar = () => {
                 <a
                   href='https://www.instagram.com/mattransport'
                   aria-label='Instagram'
-                  className='hidden sm:block mt-1'
+                  className='hidden sm:flex items-center'
                   target='_blank'
                   rel='noreferrer'
                 >
                   <FontAwesomeIcon
                     icon={faInstagram}
                     gradientFill={{
-                      id: 'instagramGradient',
+                      id: 'instagramDesktopIcon',
                       type: 'radial',
                       cx: '30%',
                       cy: '107%',
@@ -138,7 +138,8 @@ const Navbar = () => {
             </div>
           </div>
           <DisclosurePanel className='md:hidden'>
-            <div className='px-2 pt-2 pb-3 space-y-1'>
+            <div className='px-2 py-2 space-y-1'>
+              {/* Mobile menu */}
               {navigation.map(({ name, href, ariaLabel }, index) => (
                 <Link
                   href={href}
@@ -152,35 +153,51 @@ const Navbar = () => {
                   {name}
                 </Link>
               ))}
-              <div className='flex justify-center'>
-                {langBtns.map(({ src, alt, locale }) => (
+              <div className='flex justify-center items-center py-2'>
+                {langButtons.map(({ src, alt, locale }) => (
                   <Image
                     key={locale}
                     src={src}
                     alt={alt}
                     width={20}
                     height={20}
-                    className='block sm:hidden mx-2 py-3 object-cover w-5 h-5 cursor-pointer'
+                    className={`object-cover cursor-pointer ${alt === 'Polish' ? 'mr-3' : 'mr-2'}`}
                     onClick={() => switchLocale(locale)}
                   />
                 ))}
                 <a
                   href='https://facebook.com/mattransport'
                   aria-label='Facebook'
-                  className='block sm:hidden mx-2 mt-2'
+                  className='flex items-center mr-1'
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <FontAwesomeIcon icon={faFacebookSquare} className='mt-0.5' />
+                  <FontAwesomeIcon icon={faFacebookSquare} />
                 </a>
                 <a
                   href='https://www.instagram.com/mattransport'
                   aria-label='Instagram'
-                  className='block sm:hidden mx-2 mt-2'
                   target='_blank'
                   rel='noreferrer'
+                  className='flex items-center'
                 >
-                  <FontAwesomeIcon icon={faInstagram} className='mt-0.5' />
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    gradientFill={{
+                      id: 'instagramMobileIcon',
+                      type: 'radial',
+                      cx: '30%',
+                      cy: '107%',
+                      r: '120%',
+                      stops: [
+                        { offset: '0%', color: '#fdf497' },
+                        { offset: '5%', color: '#fdf497' },
+                        { offset: '45%', color: '#fd5949' },
+                        { offset: '60%', color: '#d6249f' },
+                        { offset: '90%', color: '#285aeb' },
+                      ],
+                    }}
+                  />
                 </a>
               </div>
             </div>

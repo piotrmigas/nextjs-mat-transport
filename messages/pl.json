@@ -2,6 +2,7 @@
   "description": "Oferujemy wynajem autokarów, wynajem busów i minibusów oraz wynajem samochodów osobowych z kierowcą. Nowoczesne pojazdy i doświadczeni kierowcy to nasz standard. Mat Transport, Kraków",
   "title": "Wynajem autokarów i busów | Mat Transport Kraków",
   "navbar": {
+    "home": "Strona główna",
     "about": "O nas",
     "fleet": "Flota",
     "testimonials": "Rekomendacje",
@@ -13,8 +14,8 @@
   },
   "about": {
     "header": "O firmie",
-    "p1": "Jako firma <strong>Mat Transport</strong> rozpoczęliśmy działalność w 1987 roku w Krakowie. Specjalizujemy się w wynajmie autokarów, busów i wysokiej klasy samochodów osobowych. Współpracujemy z najlepszymi polskimi i zagranicznymi biurami podróży. Obsługujemy najwyższe urzędy państwowe, koncerny międzynarodowe i banki. W naszej ofercie znajduje się obsługa wycieczek, transfery lotniskowe, serwis transportowy w czasie trwania konferencji itp. Naszą ofertę kierujemy zarówno do firm jak i do klientów indywidualnych, polskich i zagranicznych.",
-    "p2": "Tabor firmy <strong>Mat Transport</strong> to wyłącznie nowoczesne pojazdy z wyposażeniem gwarantującym najwyższe bezpieczeństwo oraz komfort podróżowania. Samochody osobowe, to limuzyny marki Audi, Mercedes i BMW. Oferujemy ich wynajem wraz z kierowcą. Busy marki Mercedes oraz autokary firm Setra, Neoplan, Mercedes i Iveco, którymi dysponujemy, to komfortowe pojazdy mogące zapewnić transport dla 5-50 osób.",
+    "p1": "Jako firma <b>Mat Transport</b> rozpoczęliśmy działalność w 1987 roku w Krakowie. Specjalizujemy się w wynajmie autokarów, busów i wysokiej klasy samochodów osobowych. Współpracujemy z najlepszymi polskimi i zagranicznymi biurami podróży. Obsługujemy najwyższe urzędy państwowe, koncerny międzynarodowe i banki. W naszej ofercie znajduje się obsługa wycieczek, transfery lotniskowe, serwis transportowy w czasie trwania konferencji itp. Naszą ofertę kierujemy zarówno do firm jak i do klientów indywidualnych, polskich i zagranicznych.",
+    "p2": "Tabor firmy <b>Mat Transport</b> to wyłącznie nowoczesne pojazdy z wyposażeniem gwarantującym najwyższe bezpieczeństwo oraz komfort podróżowania. Samochody osobowe, to limuzyny marki Audi, Mercedes i BMW. Oferujemy ich wynajem wraz z kierowcą. Busy marki Mercedes oraz autokary firm Setra, Neoplan, Mercedes i Iveco, którymi dysponujemy, to komfortowe pojazdy mogące zapewnić transport dla 5-50 osób.",
     "p3": "Nasi kierowcy charakteryzują się wysoką kulturą osobistą, wysokimi kwalifikacjami zawodowymi i wieloletnim doświadczeniem, daje to pewność dotarcia do celu w bezpieczny i przyjazny sposób. Kierowcy obsługujący klientów zagranicznych, posługują się językiem angielskim.",
     "p4": "Firma posiada licencje na wykonywanie krajowego i międzynarodowego transportu osób (nr licencji 0001312) oraz certyfikat kompetencji zawodowej (nr 01301/F3/03)."
   },

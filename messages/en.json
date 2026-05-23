@@ -2,6 +2,7 @@
   "description": "We offer coach rental, bus and minibus rental, and passenger car rental with a driver. Modern vehicles and experienced drivers are our standard. Mat Transport, Krakow",
   "title": "Coach and bus rental | Mat Transport Krakow",
   "navbar": {
+    "home": "Home",
     "about": "About Us",
     "fleet": "Fleet",
     "testimonials": "Testimonials",
@@ -13,8 +14,8 @@
   },
   "about": {
     "header": "About us",
-    "p1": "As a company <strong>Mat Transport</strong> we started our activity in 1987 in Krakow. We specialize in renting coaches, buses and high-class passenger cars. We cooperate with the best Polish and foreign travel agencies. We provide services to the highest state offices, international concerns and banks. Our offer includes tour service, airport transfers, transport service during conferences, etc. Our offer is addressed to both companies and individual clients, both Polish and foreign.",
-    "p2": "The fleet of <strong>Mat Transport</strong> are only modern vehicles with equipment that guarantees the highest safety and travel comfort. Passenger cars are limousines of the brands Audi, Mercedes and BMW. We offer their rental with a driver. Mercedes buses and Setra, Neoplan, Mercedes and Iveco coaches at our disposal are comfortable vehicles that can provide transport for 5-50 people.",
+    "p1": "As a company <b>Mat Transport</b> we started our activity in 1987 in Krakow. We specialize in renting coaches, buses and high-class passenger cars. We cooperate with the best Polish and foreign travel agencies. We provide services to the highest state offices, international concerns and banks. Our offer includes tour service, airport transfers, transport service during conferences, etc. Our offer is addressed to both companies and individual clients, both Polish and foreign.",
+    "p2": "The fleet of <b>Mat Transport</b> are only modern vehicles with equipment that guarantees the highest safety and travel comfort. Passenger cars are limousines of the brands Audi, Mercedes and BMW. We offer their rental with a driver. Mercedes buses and Setra, Neoplan, Mercedes and Iveco coaches at our disposal are comfortable vehicles that can provide transport for 5-50 people.",
     "p3": "Our drivers are characterized by high personal culture, high professional qualifications and many years of professional qualifications. experience, this ensures that you will reach your destination in a safe and friendly manner. Drivers serving foreign clients, speak English.",
     "p4": "The company has a license to perform domestic and international passenger transport (license number 0001312) and a certificate of professional competence (no. 01301 / F3 / 03)."
   },

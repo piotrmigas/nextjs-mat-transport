@@ -9,3 +9,17 @@ export const showcaseImgs = [
   '/images/home/carousel/8.webp',
   '/images/home/carousel/9.webp',
 ];
+
+export const covidInfoImgs = ['/images/home/covid1.webp', '/images/home/covid2.webp'];
+
+export const getLocalizedImagePath = (imagePath: string, locale: string): string => {
+  if (locale === 'en') {
+    const lastDotIndex = imagePath.lastIndexOf('.');
+    return imagePath.slice(0, lastDotIndex) + 'en' + imagePath.slice(lastDotIndex);
+  }
+  return imagePath;
+};
+
+export const getLocalizedCovidImgs = (locale: string): string[] => {
+  return covidInfoImgs.map((img) => getLocalizedImagePath(img, locale));
+};
