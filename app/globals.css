@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .bg-carbon {
   background: #111 url('/images/carbon-bg.webp');
 }
@@ -7,8 +13,18 @@
 .page-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  flex: 1;
   background: url('/images/glow.webp') top center no-repeat;
+}
+
+.page-container > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.page-container main {
+  flex: 1;
 }
 
 /*Whatsapp btn*/

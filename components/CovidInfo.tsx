@@ -2,8 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
-import Lightbox from 'yet-another-react-lightbox';
-import 'yet-another-react-lightbox/styles.css';
+import LightboxGallery from './LightboxGallery';
 import { getLocalizedCovidImgs } from '@/images';
 
 type CovidInfoProps = {
@@ -28,18 +27,20 @@ const CovidInfo = ({ locale }: CovidInfoProps) => {
           >
             <Image
               src={src}
-              alt={`covidInfo${index + 1}`}
+              alt='covidInfo'
               className='object-cover cursor-pointer'
               width={334}
               height={265}
+              style={{ width: 'auto', height: 'auto' }}
             />
           </div>
         ))}
       </div>
-      <Lightbox
+      <LightboxGallery
         open={lightboxOpen}
         close={() => setLightboxOpen(false)}
         slides={localizedImgs.map((src) => ({ src }))}
+        index={index}
       />
     </>
   );
