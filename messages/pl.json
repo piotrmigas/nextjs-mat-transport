@@ -24,20 +24,25 @@
     "title": "Oddajemy do Państwa dyspozycji komfortowe autokary, busy i minibusy oraz możliwość wynajmu luksusowych samochodów osobowych z kierowcą.",
     "content": "Oferta firmy Mat Transport wynajmu autokarów, busów i samochodów osobowych skierowana jest do klientów indywidualnych, firm i biur podróży, do wszystkich zainteresowanych usługami transportowymi na najwyższym poziomie. Nasze usługi świadczymy zarówno w kraju jak i zagranicą. W naszej ofercie znajdują się transfery lotniskowe krajowe i zagraniczne, serwis transportowy w czasie trwania konferencji, eventów i wydarzeń państwowych, obsługa wycieczek objazdowych i pielgrzymek oraz zorganizowanych wyjazdów na różnego typu wydarzenia sportowe czy kulturalne, a także wiele innych usług. Obsługujemy również klientów VIP, klasa naszych pojazdów gwarantuje najwyższy poziom usług.",
     "cars": "Osobowe",
-    "buses8": "Busy 6-8<br/>miejsc",
-    "buses21": "Busy 16-21<br/>miejsc",
-    "coaches33": "Autokary do<br/>33 miejsc",
-    "coaches55": "Autokary do<br/>55 miejsc"
+    "buses8": "Busy 6-8\nmiejsc",
+    "buses21": "Busy 16-21\nmiejsc",
+    "coaches33": "Autokary do\n33 miejsc",
+    "coaches55": "Autokary do\n55 miejsc"
   },
   "cars": {
     "header": "Samochody osobowe z kierowcą wynajem",
-    "mercedese2018": {
-      "header": "MERCEDES KLASA E VIP EXCLUSIVE rocznik 2018",
+    "mercedese2025": {
+      "header": "MERCEDES KLASA E VIP EXCLUSIVE rocznik 2025",
       "seats": "liczba miejsc 4+1",
       "info": "wyposażenie: wersja luksusowa z pełnym wyposażeniem, w tym: skórzana tapicerka, drewniane wykończenia, klimatyzacja automatyczna dwustrefowa, zawieszenie pneumatyczne, nastrojowe oświetlenie ambiente, wysokiej klasy naglośnienie, cd, usb, przyciemniane szyby dla pasażerów, gps live traffic, itd."
     },
-    "mercedese2019": {
-      "header": "MERCEDES KLASA E VIP EXCLUSIVE rocznik 2019",
+    "mercedese2021": {
+      "header": "MERCEDES KLASA E VIP EXCLUSIVE rocznik 2021",
+      "seats": "liczba miejsc 4+1",
+      "info": "wyposażenie: wersja luksusowa z pełnym wyposażeniem, w tym: skórzana tapicerka, drewniane wykończenia, klimatyzacja automatyczna dwustrefowa, zawieszenie pneumatyczne, nastrojowe oświetlenie ambiente, wysokiej klasy naglośnienie, cd, usb, przyciemniane szyby dla pasażerów, gps live traffic, itd."
+    },
+    "mercedese2022": {
+      "header": "MERCEDES KLASA E VIP EXCLUSIVE rocznik 2022",
       "seats": "liczba miejsc 4+1",
       "info": "wyposażenie: wersja luksusowa z pełnym wyposażeniem, w tym: skórzana tapicerka, drewniane wykończenia, klimatyzacja automatyczna dwustrefowa, zawieszenie pneumatyczne, nastrojowe oświetlenie ambiente, wysokiej klasy naglośnienie, cd, usb, przyciemniane szyby dla pasażerów, gps live traffic, itd."
     },
@@ -125,29 +130,29 @@
   },
   "testimonials": {
     "header": "Rekomendacje",
-    "title": "Firma <strong>MAT TRANSPORT</strong> istnieje od 1987 roku.",
+    "title": "Firma <b>MAT TRANSPORT</b> istnieje od 1987 roku.",
     "p1": "Od początku naszej działalności świadczymy usługi na najwyższym poziomie. Możemy pochwalić się wieloma sukcesami czego dowodem jest zadowolenie kontrahentów, listy z pochwałami od naszych klientów oraz liczne dyplomy i certyfikaty.",
-    "img1": "Ścisła współpraca z BOR podczas wizyty <strong>prezydenta USA Baracka Obamy</strong> - Warszawa, maj 2011",
-    "img2": "Wizyta <strong>prezydenta USA G.W. Buscha</strong> - Kraków, maj 2003",
+    "img1": "Ścisła współpraca z BOR podczas wizyty <b>prezydenta USA Baracka Obamy</b> - Warszawa, maj 2011",
+    "img2": "Wizyta <b>prezydenta USA G.W. Buscha</b> - Kraków, maj 2003",
     "img3": "Spotkanie ministrów kultury krajów Unii Europejskiej - Kraków, 14-16.10.2004",
     "img4": "Grupa Szwajcarów - 14-15.08.2009",
     "p2": "Obsługa niezliczonych klientów turystycznych zarówno grupowych jak i indywidualnych (zwiedzania, transfery, wycieczki). Na dowód zadowolenia klientów dołączamy kilka skanów z podziękowaniami za nasz serwis.",
-    "li1": "Obsługa z zakresu transportu podczas XXI FORUM EKONOMICZNEGO KRYNICA 2011 (POLSKA GOSPODARKA ENERGETYCZNA), zapewnienie indywidualnego transportu dla <strong>PREMIERA JANA KRZYSZTOFA BIELECKIEGO</strong>.",
-    "li2": "Współpraca z <strong>BOR</strong> z zakresu poruszania sie w <strong>KOLUMNIE PREZYDENCKIEJ RZĄDÓW CZECH, UKRAINY, CHORWACJI ORAZ BUŁGARII</strong>.",
-    "li3": "Zapewnienie serwisu dla <strong>BURMISTRZA RZYMU I PREZYDENTA TOSKANII 2011</strong>.",
+    "li1": "Obsługa z zakresu transportu podczas XXI FORUM EKONOMICZNEGO KRYNICA 2011 (POLSKA GOSPODARKA ENERGETYCZNA), zapewnienie indywidualnego transportu dla <b>PREMIERA JANA KRZYSZTOFA BIELECKIEGO</b>.",
+    "li2": "Współpraca z <b>BOR</b> z zakresu poruszania sie w <b>KOLUMNIE PREZYDENCKIEJ RZĄDÓW CZECH, UKRAINY, CHORWACJI ORAZ BUŁGARII</b>.",
+    "li3": "Zapewnienie serwisu dla <b>BURMISTRZA RZYMU I PREZYDENTA TOSKANII 2011</b>.",
     "li4": "Obsługa transportowa pielgrzymkowej grupy włoskiej 560 osób, 24-28 luty 2011.",
     "li5": "Obsługa transportowa pielgrzymkowej grupy włoskiej 970 osób, kwiecień 2011.",
     "li6": "Nasze samochody wykorzystywane były w trakcie trwania prezydencji Unii Europejskiej w 2011 roku.",
-    "li7": "Obsługa konferencji <strong>PFIZER</strong>, <strong>ROCHE</strong>, <strong>PHILIP MORRIS</strong>, <strong>ING</strong>...",
+    "li7": "Obsługa konferencji <b>PFIZER</b>, <b>ROCHE</b>, <b>PHILIP MORRIS</b>, <b>ING</b>...",
     "li8": "Współpraca z osobami ze świata show biznesu, kultury."
   },
   "contact": {
     "header": "Kontakt",
     "name": "FIRMA MAT TRANSPORT OSOBOWY",
     "h1": "ADRES KORESPONDENCYJNY",
-    "p1": "UL. UŚMIECH 8/3<br/>30-560 KRAKÓW",
+    "p1": "UL. UŚMIECH 8/3\n30-560 KRAKÓW",
     "h2": "ADRES BIURA",
-    "p2": "UL. WODNA 4<br/>30-556 KRAKÓW<br/>BIURO CZYNNE:<br/>PN-PT 10-17",
+    "p2": "UL. WODNA 4\n30-556 KRAKÓW\nBIURO CZYNNE:\nPN-PT 10-17",
     "h3": "TELEFONY",
     "formHeader": "Napisz do nas",
     "formName": "Imię",

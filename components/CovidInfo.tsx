@@ -3,7 +3,7 @@
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
 import LightboxGallery from './LightboxGallery';
-import { getLocalizedCovidImgs } from '@/images';
+import { getLocalizedCovidImgs } from '@/helper';
 
 type CovidInfoProps = {
   locale: string;

@@ -24,20 +24,25 @@
     "title": "We offer you comfortable coaches, buses and minibuses as well as the possibility of renting luxury passenger cars with a driver.",
     "content": "Mat Transport's offer of coach, bus and passenger car rental is addressed to individual customers, companies and travel agencies, to all those interested in transport services at the highest level. We provide our services both in Poland and abroad. Our offer includes domestic and foreign airport transfers, transport service during conferences, state events and events, service for round trips and pilgrimages, and organized trips to various types of sports and cultural events, as well as many other services. We also serve VIP clients, the class of our vehicles guarantees the highest level of service.",
     "cars": "Cars",
-    "buses8": "Buses 6-8<br/>seats",
-    "buses21": "Buses 16-21<br/>seats",
-    "coaches33": "Coaches up to<br/>33 seats",
-    "coaches55": "Coaches up to<br/>55 seats"
+    "buses8": "Buses 6-8\nseats",
+    "buses21": "Buses 16-21\nseats",
+    "coaches33": "Coaches up to\n33 seats",
+    "coaches55": "Coaches up to\n55 seats"
   },
   "cars": {
     "header": "Passenger cars with a rental driver",
-    "mercedese2018": {
-      "header": "MERCEDES E CLASS VIP EXCLUSIVE 2018",
+    "mercedese2025": {
+      "header": "MERCEDES E CLASS VIP EXCLUSIVE 2025",
       "seats": "number of seats 4+1",
       "info": "interior: luxury version with full equipment, including: leather upholstery, wooden finishes, automatic two-zone air conditioning, air suspension, ambiente lighting, high-class sound, CD, USB, tinted windows for passengers, GPS live traffic, etc."
     },
-    "mercedese2019": {
-      "header": "MERCEDES E CLASS VIP EXCLUSIVE 2019",
+    "mercedese2021": {
+      "header": "MERCEDES E CLASS VIP EXCLUSIVE 2021",
+      "seats": "number of seats 4+1",
+      "info": "interior: luxury version with full equipment, including: leather upholstery, wooden finishes, automatic two-zone air conditioning, air suspension, ambiente lighting, high-class sound, CD, USB, tinted windows for passengers, GPS live traffic, etc."
+    },
+    "mercedese2022": {
+      "header": "MERCEDES E CLASS VIP EXCLUSIVE 2022",
       "seats": "number of seats 4+1",
       "info": "interior: luxury version with full equipment, including: leather upholstery, wooden finishes, automatic two-zone air conditioning, air suspension, ambiente lighting, high-class sound, CD, USB, tinted windows for passengers, GPS live traffic, etc."
     },
@@ -125,29 +130,29 @@
   },
   "testimonials": {
     "header": "Testimonials",
-    "title": "The <strong>MAT TRANSPORT</strong> company has been operating since 1987.",
+    "title": "The <b>MAT TRANSPORT</b> company has been operating since 1987.",
     "p1": "From the beginning of our activity, we provide services at the highest level. We can boast of many successes, as evidenced by the satisfaction of contractors, letters of praise from our clients and numerous diplomas and certificates.",
-    "img1": "Close cooperation with BOR during the visit of <strong>US President Barack Obama</strong> - Warsaw, May 2011",
-    "img2": "Visit of <strong>US President G.W. Busch</strong> - Krakow, May 2003",
+    "img1": "Close cooperation with BOR during the visit of <b>US President Barack Obama</b> - Warsaw, May 2011",
+    "img2": "Visit of <b>US President G.W. Busch</b> - Krakow, May 2003",
     "img3": "Meeting of the ministers of culture of the European Union countries - Krakow, October 14-16, 2004",
     "img4": "Group of swiss tourists - 14-15.08.2009",
     "p2": "Support for countless tourist clients, both group and individual (sightseeing, transfers, trips). As proof of customer satisfaction, we attach a few scans with thanks for our service.",
-    "li1": "Transport service during the 21st ECONOMIC FORUM KRYNICA 2011 (POLSKA ENERGY ECONOMY), providing individual transport for <strong>PREMIERE OF JAN KRZYSZTOF BIELECKI</strong>.",
-    "li2": "Cooperation with <strong>BOR</strong> in the field of moving in the <strong>PRESIDENTIAL COLUMN OF THE CZECH, UKRAINE, CROATIA AND BULGARIA GOVERNMENTS</strong>.",
-    "li3": "Provision of service for <strong>MAYOR OF ROME AND PRESIDENT OF TUSCANY 2011</strong>.",
+    "li1": "Transport service during the 21st ECONOMIC FORUM KRYNICA 2011 (POLSKA ENERGY ECONOMY), providing individual transport for <b>PREMIERE OF JAN KRZYSZTOF BIELECKI</b>.",
+    "li2": "Cooperation with <b>BOR</b> in the field of moving in the <b>PRESIDENTIAL COLUMN OF THE CZECH, UKRAINE, CROATIA AND BULGARIA GOVERNMENTS</b>.",
+    "li3": "Provision of service for <b>MAYOR OF ROME AND PRESIDENT OF TUSCANY 2011</b>.",
     "li4": "Transport service for the Italian pilgrimage group of 560 people, February 24-28, 2011.",
     "li5": "Transport service for the Italian pilgrimage group of 970 people, April 2011.",
     "li6": "Our cars were used during the presidency of the European Union in 2011.",
-    "li7": "Conference support <strong>PFIZER</strong>, <strong>ROCHE</strong>, <strong>PHILIP MORRIS</strong>, <strong>ING</strong> ...",
+    "li7": "Conference support <b>PFIZER</b>, <b>ROCHE</b>, <b>PHILIP MORRIS</b>, <b>ING</b> ...",
     "li8": "Cooperation with people from the world of show business and culture."
   },
   "contact": {
     "header": "Contact",
     "name": "MAT TRANSPORT",
     "h1": "CORRESPONDENCE ADDRESS",
-    "p1": "UŚMIECH 8/3<br/>30-560 KRAKOW",
+    "p1": "UŚMIECH 8/3\n30-560 KRAKOW",
     "h2": "OFFICE ADDRESS",
-    "p2": "WODNA 4<br/>30-556 KRAKOW<br/>OPENING HOURS:<br/>MON.-FRI. 10-17",
+    "p2": "WODNA 4\n30-556 KRAKOW\nOPENING HOURS:\nMON.-FRI. 10-17",
     "h3": "PHONE NUMBERS",
     "formHeader": "Contact Us",
     "formName": "First name",

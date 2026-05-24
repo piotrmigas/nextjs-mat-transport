@@ -2,7 +2,7 @@ import { use } from 'react';
 import { Locale, useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import Carousel from '@/components/Carousel';
-import { showcaseImgs } from '@/images';
+import { showcaseImgs } from '@/helper';
 import FadeIn from '@/components/FadeIn';
 import CovidInfo from '@/components/CovidInfo';
 
