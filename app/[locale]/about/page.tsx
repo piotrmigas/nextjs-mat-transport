@@ -18,7 +18,7 @@ const About = () => {
             <p className='font-medium'>Mirosław Mildner, Paweł Mildner</p>
           </div>
         </div>
-        <div className='mt-10 flex justify-center'>
+        <div className='mt-10 mb-4 flex justify-center'>
           <Image src='/images/about/pfr.jpg' alt='Polski Fundusz Rozwoju' loading='eager' width={670} height={596} />
         </div>
       </div>
