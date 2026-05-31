@@ -1,8 +1,20 @@
 import { useTranslations } from 'next-intl';
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import PageHeader from '@/components/PageHeader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faShuttleVan, faBus } from '@fortawesome/free-solid-svg-icons';
+import { getPageMetadata } from '@/helper';
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return getPageMetadata(locale, 'fleet.home');
+}
 
 const Fleet = () => {
   const t = useTranslations('fleet');

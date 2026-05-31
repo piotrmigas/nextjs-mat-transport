@@ -1,6 +1,17 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import PageHeader from '@/components/PageHeader';
+import { getPageMetadata } from '@/helper';
+import { Metadata } from 'next/dist/lib/metadata/types/metadata-interface';
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return getPageMetadata(locale, 'about');
+}
 
 const About = () => {
   const t = useTranslations('about');

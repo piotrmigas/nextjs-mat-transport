@@ -1,7 +1,17 @@
 import { useTranslations } from 'next-intl';
 import PageHeader from '@/components/PageHeader';
-import { carsData } from '@/helper';
+import { carsData, getPageMetadata } from '@/helper';
 import VehicleInfo from '@/components/VehicleInfo';
+import type { Metadata } from 'next';
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return getPageMetadata(locale, 'fleet.cars');
+}
 
 const Cars = () => {
   const t = useTranslations('cars');

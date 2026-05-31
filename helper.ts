@@ -1,3 +1,6 @@
+import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+
 export const showcaseImgs = [
   '/images/home/carousel/1.webp',
   '/images/home/carousel/2.webp',
@@ -159,3 +162,18 @@ export const buses8Data = [
     ],
   },
 ];
+
+export async function getPageMetadata(
+  locale: string,
+  translationKey: string,
+  namespace: string = 'navbar',
+): Promise<Metadata> {
+  const t = await getTranslations({
+    locale,
+    namespace,
+  });
+
+  return {
+    title: t(translationKey),
+  };
+}

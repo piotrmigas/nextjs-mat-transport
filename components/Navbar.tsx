@@ -25,7 +25,7 @@ const Navbar = () => {
   const navigation = [
     { name: <FontAwesomeIcon icon={faHome} />, href: '/', ariaLabel: t('home') },
     { name: t('about'), href: '/about', ariaLabel: t('about') },
-    { name: t('fleet'), href: '/fleet', ariaLabel: t('fleet') },
+    { name: t('fleet.home'), href: '/fleet', ariaLabel: t('fleet.home') },
     { name: t('testimonials'), href: '/testimonials', ariaLabel: t('testimonials') },
     { name: t('contact'), href: '/contact', ariaLabel: t('contact') },
     { name: 'Mat Sport', href: '/sport', ariaLabel: 'Mat Sport' },

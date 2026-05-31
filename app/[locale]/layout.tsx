@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Montserrat } from 'next/font/google';
 import '../globals.css';
+import { getPageMetadata } from '@/helper';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -21,14 +22,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-
-  const t = await getTranslations({
-    locale,
-  });
-
-  return {
-    title: t('title'),
-  };
+  return getPageMetadata(locale, 'title', '');
 }
 
 export function generateStaticParams() {

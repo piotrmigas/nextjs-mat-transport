@@ -4,7 +4,14 @@
   "navbar": {
     "home": "Home",
     "about": "About Company",
-    "fleet": "Fleet",
+    "fleet": {
+      "home": "Fleet",
+      "cars": "Fleet - Passenger cars",
+      "buses8": "Fleet - Buses 6-8 seats",
+      "buses21": "Fleet - Buses 16-21 seats",
+      "coaches33": "Fleet - Coaches up to 33 seats",
+      "coaches55": "Fleet - Coaches up to 55 seats"
+    },
     "testimonials": "Testimonials",
     "contact": "Contact"
   },

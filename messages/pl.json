@@ -4,7 +4,14 @@
   "navbar": {
     "home": "Strona główna",
     "about": "O firmie",
-    "fleet": "Flota",
+    "fleet": {
+      "home": "Flota",
+      "cars": "Flota - Samochody osobowe",
+      "buses8": "Flota - Busy 6-8 miejsc",
+      "buses21": "Flota - Busy 16-21 miejsc",
+      "coaches33": "Flota - Autokary do 33 miejsc",
+      "coaches55": "Flota - Autokary do 55 miejsc"
+    },
     "testimonials": "Rekomendacje",
     "contact": "Kontakt"
   },
