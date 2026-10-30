@@ -1,58 +1,75 @@
 'use client';
 
-import dynamic from 'next/dynamic';
+import { useState, type ReactNode } from 'react';
+import FsLightbox from 'fslightbox-react';
 import Image from 'next/image';
-import { isImageFitCover, isImageSlide, useLightboxProps, useLightboxState } from 'yet-another-react-lightbox';
-import 'yet-another-react-lightbox/styles.css';
 
-const Lightbox = dynamic(() => import('yet-another-react-lightbox'), {
-  ssr: false,
-});
-
-type LightBoxGalleryProps = {
-  slides: { src: string }[];
-  open: boolean;
-  close: () => void;
-  index?: number;
+type Thumbnail = {
+  src: string;
+  alt?: string;
+  caption?: ReactNode;
 };
 
-function NextJsImage({ slide, offset, rect }: any) {
-  const {
-    on: { click },
-    carousel: { imageFit },
-  } = useLightboxProps();
-  const { currentIndex } = useLightboxState();
+type Props = {
+  toggler?: boolean;
+  sources?: string[];
+  sourceIndex?: number;
+  thumbnails?: Thumbnail[];
+};
 
-  const cover = isImageSlide(slide) && isImageFitCover(slide, imageFit);
-
-  if (!isImageSlide(slide) || typeof slide.src !== 'string') {
-    return undefined;
-  }
-
-  const width = !cover ? rect.width : rect.width;
-  const height = !cover ? rect.height : rect.height;
+const LightboxGallery = ({
+  toggler,
+  sources,
+  sourceIndex = 0,
+  thumbnails,
+}: Props) => {
+  const [internalState, setInternalState] = useState({
+    toggler: false,
+    sourceIndex: 0,
+  });
+  const controlled = toggler !== undefined;
+  const gallerySources = sources ?? thumbnails?.map(({ src }) => src) ?? [];
 
   return (
-    <div style={{ position: 'relative', width, height }}>
-      <Image
-        fill
-        alt=''
-        src={slide.src}
-        loading='eager'
-        draggable={false}
-        style={{
-          objectFit: cover ? 'cover' : 'contain',
-          cursor: click ? 'pointer' : undefined,
-        }}
-        sizes={`${Math.ceil((width / window.innerWidth) * 100)}vw`}
-        onClick={offset === 0 ? () => click?.({ index: currentIndex }) : undefined}
+    <>
+      {thumbnails && (
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4 py-5'>
+          {thumbnails.map(({ src, alt = '', caption }, index) => (
+            <figure
+              key={src}
+              className='overflow-hidden rounded border-2 border-solid border-black bg-white'
+            >
+              <button
+                type='button'
+                aria-label={`Open image ${index + 1}`}
+                className='relative block h-52 w-full cursor-zoom-in'
+                onClick={() =>
+                  setInternalState((state) => ({
+                    toggler: !state.toggler,
+                    sourceIndex: index,
+                  }))
+                }
+              >
+                <Image
+                  src={src}
+                  alt={alt}
+                  fill
+                  sizes='(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw'
+                  className='object-contain'
+                />
+              </button>
+              {caption && <figcaption className='p-3 text-center'>{caption}</figcaption>}
+            </figure>
+          ))}
+        </div>
+      )}
+      <FsLightbox
+        toggler={controlled ? toggler : internalState.toggler}
+        sources={gallerySources}
+        sourceIndex={controlled ? sourceIndex : internalState.sourceIndex}
       />
-    </div>
+    </>
   );
-}
-
-const LightBoxGallery = ({ slides, open, close, index = 0 }: LightBoxGalleryProps) => {
-  return <Lightbox open={open} close={close} slides={slides} index={index} render={{ slide: NextJsImage }} />;
 };
 
-export default LightBoxGallery;
+export default LightboxGallery;

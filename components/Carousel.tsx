@@ -1,15 +1,19 @@
 'use client';
 
+import { useEffect } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import { useEffect } from 'react';
+import Fade from 'embla-carousel-fade';
+import Image from 'next/image';
+import { DotButton, useDotButton } from './DotButton';
 
 type CarouselProps = {
   images: string[];
 };
 
 const Carousel = ({ images }: CarouselProps) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay(), Fade()]);
+  const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
 
   useEffect(() => {
     if (!emblaApi) return;
@@ -22,10 +26,19 @@ const Carousel = ({ images }: CarouselProps) => {
         <div className='embla__container'>
           {images.map((src, index) => (
             <div className='embla__slide' key={index}>
-              <img src={src} alt='' width='900' height='460' />
+              <Image src={src} alt='carousel image' width={900} height={460} />
             </div>
           ))}
         </div>
+      </div>
+      <div className='embla__dots'>
+        {scrollSnaps.map((_, index) => (
+          <DotButton
+            key={index}
+            onClick={() => onDotButtonClick(index)}
+            className={'embla__dot'.concat(index === selectedIndex ? ' embla__dot--selected' : '')}
+          />
+        ))}
       </div>
     </div>
   );

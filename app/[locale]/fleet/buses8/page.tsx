@@ -2,15 +2,11 @@ import { useTranslations } from 'next-intl';
 import PageHeader from '@/components/PageHeader';
 import VehicleInfo from '@/components/VehicleInfo';
 import { buses8Data, getPageMetadata } from '@/helper';
-import { Metadata } from 'next/dist/lib/metadata/types/metadata-interface';
+import type { Metadata } from 'next';
+import { locale } from 'next/root-params';
 
-type Props = {
-  params: Promise<{ locale: string }>;
-};
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params;
-  return getPageMetadata(locale, 'fleet.cars');
+export async function generateMetadata(): Promise<Metadata> {
+  return getPageMetadata(await locale(), 'fleet.buses8');
 }
 
 const Buses8 = () => {
@@ -19,11 +15,11 @@ const Buses8 = () => {
   return (
     <>
       <PageHeader header={t('header')} />
-      <div className='text-black bg-gray-200'>
+      <div className='text-gray-900 bg-gray-200'>
         <div className='max-w-6xl mx-auto pt-5 pb-9 px-8'>
-          {buses8Data.map(({ header, seats, info, images }) => (
+          {buses8Data.map(({ header, seats, info, images }, i) => (
             <VehicleInfo
-              key={header}
+              key={i}
               header={header.includes('.') ? t(header) : header}
               seats={t(seats)}
               info={t(info)}

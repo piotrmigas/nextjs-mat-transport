@@ -2,45 +2,43 @@
 
 import { useState, useMemo } from 'react';
 import Image from 'next/image';
+import { useLocale } from 'next-intl';
 import LightboxGallery from './LightboxGallery';
 import { getLocalizedCovidImgs } from '@/helper';
 
-type CovidInfoProps = {
-  locale: string;
-};
-
-const CovidInfo = ({ locale }: CovidInfoProps) => {
+const CovidInfo = () => {
+  const locale = useLocale();
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [index, setIndex] = useState(0);
   const localizedImgs = useMemo(() => getLocalizedCovidImgs(locale), [locale]);
 
   return (
     <>
-      <div className='flex justify-center items-center gap-4 max-w-3xl px-8 flex-wrap sm:flex-nowrap mx-auto'>
+      <div className='flex justify-center items-center gap-4  flex-wrap sm:flex-nowrap mx-auto'>
         {localizedImgs.map((src, i) => (
-          <div
+          <button
+            type='button'
             key={i}
+            className='h-67.5 w-110 overflow-hidden'
             onClick={() => {
               setIndex(i);
-              setLightboxOpen(true);
+              setLightboxOpen((isOpen) => !isOpen);
             }}
           >
             <Image
               src={src}
-              alt='covidInfo'
-              className='object-cover cursor-pointer'
-              width={334}
-              height={265}
-              style={{ width: 'auto', height: 'auto' }}
+              alt='covid info'
+              className='h-auto w-full object-cover object-top cursor-zoom-in'
+              width={2000}
+              height={1545}
             />
-          </div>
+          </button>
         ))}
       </div>
       <LightboxGallery
-        open={lightboxOpen}
-        close={() => setLightboxOpen(false)}
-        slides={localizedImgs.map((src) => ({ src }))}
-        index={index}
+        toggler={lightboxOpen}
+        sources={localizedImgs}
+        sourceIndex={index}
       />
     </>
   );

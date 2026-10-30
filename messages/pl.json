@@ -29,7 +29,11 @@
   "fleet": {
     "header": "Oferta autokarów, busów i samochodów osobowych na wynajem",
     "title": "Oddajemy do Państwa dyspozycji komfortowe autokary, busy i minibusy oraz możliwość wynajmu luksusowych samochodów osobowych z kierowcą.",
-    "content": "Oferta firmy Mat Transport wynajmu autokarów, busów i samochodów osobowych skierowana jest do klientów indywidualnych, firm i biur podróży, do wszystkich zainteresowanych usługami transportowymi na najwyższym poziomie. Nasze usługi świadczymy zarówno w kraju jak i zagranicą. W naszej ofercie znajdują się transfery lotniskowe krajowe i zagraniczne, serwis transportowy w czasie trwania konferencji, eventów i wydarzeń państwowych, obsługa wycieczek objazdowych i pielgrzymek oraz zorganizowanych wyjazdów na różnego typu wydarzenia sportowe czy kulturalne, a także wiele innych usług. Obsługujemy również klientów VIP, klasa naszych pojazdów gwarantuje najwyższy poziom usług.",
+    "content": "Oferta firmy Mat Transport wynajmu autokarów, busów i samochodów osobowych skierowana jest do klientów indywidualnych, firm i biur podróży, do wszystkich zainteresowanych usługami transportowymi na najwyższym poziomie.",
+    "li1": "Nasze usługi świadczymy zarówno w kraju jak i zagranicą.",
+    "li2": "W naszej ofercie znajdują się transfery lotniskowe krajowe i zagraniczne, serwis transportowy w czasie trwania konferencji, eventów i wydarzeń państwowych, obsługa wycieczek objazdowych i pielgrzymek oraz zorganizowanych wyjazdów na różnego typu wydarzenia sportowe czy kulturalne, a także wiele innych usług.",
+    "li3": "Obsługujemy również klientów VIP, klasa naszych pojazdów gwarantuje najwyższy poziom usług.",
+    "li4": "Nasze pojazdy wyposażone są w nowoczesne systemy bezpieczeństwa oraz udogodnienia zapewniające każdemu pasażerowi płynną i niezawodną podróż.",
     "cars": "Osobowe",
     "buses8": "Busy 6-8\nmiejsc",
     "buses21": "Busy 16-21\nmiejsc",
@@ -173,12 +177,15 @@
     "alertError": "Błąd"
   },
   "sport": {
+    "header": "Mat Sport",
     "ul": "Sukcesy załogi MAT SPORT:",
-    "li1": "1 miejsce w Rajdzie Wisły klasa E 30 - Runda Pucharu Polski 2011",
-    "li2": "3 miejsce w Rajdzie Elmot/Świdnickim w klasie N2 - Runda Pucharu Polski 2010",
-    "li3": "3 miejsce w Rajdzie Krakowskim w klasie N2 - Runda Pucharu Polski 2010",
-    "li4": "V-ce liderzy klasyfikacji N2 PUCHARU POLSKI po 5 rundach w roku 2010",
-    "li5": "V-ce mistrzowie okręgu krakowskiego w klasyfikacji generalnej - 2008",
-    "li6": "Mistrzowie okręgu krakowskiego w Klasie do poj. 2000cm3 - 2008"
+    "li1": "Mistrzowie okręgu krakowskiego w Klasie do poj. 2000cm3 - 2008",
+    "li2": "V-ce mistrzowie okręgu krakowskiego w klasyfikacji generalnej - 2008",
+    "li3": "V-ce liderzy klasyfikacji N2 PUCHARU POLSKI po 5 rundach w roku 2010",
+    "li4": "3 miejsce w Rajdzie Krakowskim w klasie N2 - Runda Pucharu Polski 2010",
+    "li5": "3 miejsce w Rajdzie Elmot/Świdnickim w klasie N2 - Runda Pucharu Polski 2010",
+    "li6": "1 miejsce w Rajdzie Wisły klasa E 30 - Runda Pucharu Polski 2011",
+    "li7": "Paweł Mildner/Paweł Konik - 1 miejsce Puchar im. Janusza Kuliga za najlepszy czas bezwzględny - 53 Rajd Żubrów",
+    "li8": "Paweł Mildner/Paweł Konik - 1 miejsce zdobywcy złotej kierownicy Sobiesława Zasada - 53 Rajd Żubrów 2019"
   }
 }

@@ -13,7 +13,19 @@ export const showcaseImgs = [
   '/images/home/carousel/9.webp',
 ];
 
-export const covidInfoImgs = ['/images/home/covid1.webp', '/images/home/covid2.webp'];
+export const sportImgs = [
+  '/images/sport/1.webp',
+  '/images/sport/2.webp',
+  '/images/sport/3.webp',
+  '/images/sport/4.webp',
+  '/images/sport/5.webp',
+  '/images/sport/6.webp',
+  '/images/sport/7.webp',
+  '/images/sport/8.webp',
+  '/images/sport/9.webp',
+];
+
+const covidInfoImgs = ['/images/home/covid1.webp', '/images/home/covid2.webp'];
 
 export const getLocalizedImagePath = (imagePath: string, locale: string): string => {
   if (locale === 'en') {
@@ -159,6 +171,120 @@ export const buses8Data = [
       '/images/fleet/buses8/mercedes-vito-111/3.jpg',
       '/images/fleet/buses8/mercedes-vito-111/4.jpg',
       '/images/fleet/buses8/mercedes-vito-111/5.jpg',
+    ],
+  },
+];
+
+export const buses21Data = [
+  {
+    header: 'MERCEDES SPRINTER 2020',
+    info: 'mercedessprinter2020.info',
+    seats: 'mercedessprinter2020.seats',
+    images: [
+      '/images/fleet/buses21/mercedes-sprinter-2020/1.jpg',
+      '/images/fleet/buses21/mercedes-sprinter-2020/2.jpg',
+      '/images/fleet/buses21/mercedes-sprinter-2020/3.jpg',
+      '/images/fleet/buses21/mercedes-sprinter-2020/4.jpg',
+      '/images/fleet/buses21/mercedes-sprinter-2020/5.jpg',
+    ],
+  },
+  {
+    header: 'MERCEDES SPRINTER 2013',
+    info: 'mercedessprinter2013.info',
+    seats: 'mercedessprinter2013.seats',
+    images: [
+      '/images/fleet/buses21/mercedes-sprinter-2013/1.jpg',
+      '/images/fleet/buses21/mercedes-sprinter-2013/2.jpg',
+      '/images/fleet/buses21/mercedes-sprinter-2013/3.jpg',
+      '/images/fleet/buses21/mercedes-sprinter-2013/4.jpg',
+      '/images/fleet/buses21/mercedes-sprinter-2013/5.jpg',
+    ],
+  },
+];
+
+export const coaches33Data = [
+  {
+    header: 'IVECO ROSERO VIP 2018',
+    info: 'ivecorosero.info',
+    seats: 'ivecorosero.seats',
+    images: [
+      '/images/fleet/coaches33/iveco-rosero/1.jpg',
+      '/images/fleet/coaches33/iveco-rosero/2.jpg',
+      '/images/fleet/coaches33/iveco-rosero/3.jpg',
+      '/images/fleet/coaches33/iveco-rosero/4.jpg',
+      '/images/fleet/coaches33/iveco-rosero/5.jpg',
+      '/images/fleet/coaches33/iveco-rosero/6.jpg',
+      '/images/fleet/coaches33/iveco-rosero/7.jpg',
+    ],
+  },
+  {
+    header: 'IVECO MAGO 2 ',
+    info: 'ivecomago2white.info',
+    seats: 'ivecomago2white.seats',
+    images: [
+      '/images/fleet/coaches33/iveco-mago-2-white/1.jpg',
+      '/images/fleet/coaches33/iveco-mago-2-white/2.jpg',
+      '/images/fleet/coaches33/iveco-mago-2-white/3.jpg',
+      '/images/fleet/coaches33/iveco-mago-2-white/4.jpg',
+      '/images/fleet/coaches33/iveco-mago-2-white/5.jpg',
+    ],
+  },
+  {
+    header: 'IVECO MAGO 2',
+    info: 'ivecomago2silver.info',
+    seats: 'ivecomago2silver.seats',
+    images: [
+      '/images/fleet/coaches33/iveco-mago-2-silver/1.jpg',
+      '/images/fleet/coaches33/iveco-mago-2-silver/2.jpg',
+      '/images/fleet/coaches33/iveco-mago-2-silver/3.jpg',
+      '/images/fleet/coaches33/iveco-mago-2-silver/4.jpg',
+      '/images/fleet/coaches33/iveco-mago-2-silver/5.jpg',
+      '/images/fleet/coaches33/iveco-mago-2-silver/6.jpg',
+    ],
+  },
+];
+
+export const coaches55Data = [
+  {
+    header: 'MERCEDES TOURISMO VIP CLASS',
+    info: 'mercedesturismo.info',
+    seats: 'mercedesturismo.seats',
+    images: [
+      '/images/fleet/coaches55/mercedes-turismo/1.jpg',
+      '/images/fleet/coaches55/mercedes-turismo/2.jpg',
+      '/images/fleet/coaches55/mercedes-turismo/3.jpg',
+      '/images/fleet/coaches55/mercedes-turismo/4.jpg',
+      '/images/fleet/coaches55/mercedes-turismo/5.jpg',
+    ],
+  },
+  {
+    header: 'SETRA 415 HD ROYAL CLASS',
+    info: 'setra415.info',
+    seats: 'setra415.seats',
+    images: [
+      '/images/fleet/coaches55/setra/1.jpg',
+      '/images/fleet/coaches55/setra/2.jpg',
+      '/images/fleet/coaches55/setra/3.jpg',
+    ],
+  },
+  {
+    header: 'NEOPLAN EUROLINER',
+    info: 'neoplaneuroliner.info',
+    seats: 'neoplaneuroliner.seats',
+    images: [
+      '/images/fleet/coaches55/neoplan/1.jpg',
+      '/images/fleet/coaches55/neoplan/2.jpg',
+      '/images/fleet/coaches55/neoplan/3.jpg',
+    ],
+  },
+  {
+    header: 'MERCEDES 350 RHD',
+    info: 'mercedes350.info',
+    seats: 'mercedes350.seats',
+    images: [
+      '/images/fleet/coaches55/mercedes-350/1.jpg',
+      '/images/fleet/coaches55/mercedes-350/2.jpg',
+      '/images/fleet/coaches55/mercedes-350/3.jpg',
     ],
   },
 ];

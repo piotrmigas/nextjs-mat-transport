@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@plugin "@tailwindcss/forms";
 
 body {
   display: flex;
@@ -89,8 +90,63 @@ body {
   min-width: 0;
 }
 
+.embla__dots {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.embla__dot {
+  -webkit-tap-highlight-color: rgb(230, 230, 230, 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+.embla__dot:before,
+.embla__dot:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  content: '';
+}
+
+.embla__dot:before {
+  border: 1px solid grey;
+}
+
+.embla__dot:after {
+  border: 1px solid #d60126;
+  opacity: 0;
+}
+
+.embla__dot--selected:after {
+  opacity: 1;
+  background-color: #d60126;
+}
+
 /* Lightbox */
 
-.SRLOpened {
-  margin: 0 !important;
+.fslightbox-toolbar-button[title='Enter fullscreen'],
+.fslightbox-toolbar-button[title='Exit fullscreen'] {
+  display: none;
 }

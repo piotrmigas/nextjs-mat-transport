@@ -1,12 +1,12 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Montserrat } from 'next/font/google';
+import { locale } from 'next/root-params';
 import '../globals.css';
 import { getPageMetadata } from '@/helper';
 
@@ -16,13 +16,8 @@ const montserrat = Montserrat({
   weight: ['400', '500'],
 });
 
-type Props = {
-  params: Promise<{ locale: string }>;
-};
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params;
-  return getPageMetadata(locale, 'title', '');
+export async function generateMetadata(): Promise<Metadata> {
+  return getPageMetadata(await locale(), 'title', '');
 }
 
 export function generateStaticParams() {
@@ -31,15 +26,13 @@ export function generateStaticParams() {
 
 export default async function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+  const currentLocale = await locale();
 
   return (
-    <html lang={locale}>
+    <html lang={currentLocale}>
       <body className={`bg-carbon text-white ${montserrat.className}`}>
         <div className='page-container'>
           <NextIntlClientProvider>

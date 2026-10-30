@@ -1,0 +1,35 @@
+import { useTranslations } from 'next-intl';
+import PageHeader from '@/components/PageHeader';
+import VehicleInfo from '@/components/VehicleInfo';
+import { buses21Data, getPageMetadata } from '@/helper';
+import type { Metadata } from 'next';
+import { locale } from 'next/root-params';
+
+export async function generateMetadata(): Promise<Metadata> {
+  return getPageMetadata(await locale(), 'fleet.buses21');
+}
+
+const Buses21 = () => {
+  const t = useTranslations('buses21');
+
+  return (
+    <>
+      <PageHeader header={t('header')} />
+      <div className='text-gray-900 bg-gray-200'>
+        <div className='max-w-6xl mx-auto pt-5 pb-9 px-8'>
+          {buses21Data.map(({ header, seats, info, images }, i) => (
+            <VehicleInfo
+              key={i}
+              header={header.includes('.') ? t(header) : header}
+              seats={t(seats)}
+              info={t(info)}
+              images={images}
+            />
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Buses21;
