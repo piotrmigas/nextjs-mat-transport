@@ -20,35 +20,40 @@ const Contact = () => {
       <PageHeader header={t('header')} />
       <div className='bg-gray-200 text-gray-900'>
         <div className='max-w-6xl'>
-          <div className='grid sm:grid-cols-2 gap-6 sm:gap-0 pt-6 pb-5'>
-            <div>
+          <div className='flex flex-col sm:flex-row gap-6 sm:gap-0 pt-6 pb-5'>
+            <div className='w-full sm:w-1/2'>
               <h5 className='mb-5 font-semibold text-center'>{t('name')}</h5>
-              <div className='grid grid-cols-6 mb-4 text-sm'>
-                <div className='col-start-1 sm:col-start-2 col-span-5 sm:col-span-4'>
-                  <div className='grid grid-cols-3 items-center'>
-                    <FontAwesomeIcon icon={faMapMarkerAlt} className='text-3xl mx-auto' />
-                    <div className='col-span-2'>
+              <div className='flex justify-center mb-4 text-sm'>
+                <div className='w-5/6 sm:ml-[16.666667%] sm:w-2/3'>
+                  <div className='flex items-center'>
+                    <div className='flex w-1/3 shrink-0 justify-center'>
+                      <FontAwesomeIcon icon={faMapMarkerAlt} className='text-3xl' />
+                    </div>
+                    <div className='w-2/3'>
                       <h6 className='font-semibold'>{t('header1')}</h6>
                       <p className='whitespace-pre-line'>{t.rich('p1', { b: (chunks) => <b>{chunks}</b> })}</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='grid grid-cols-6 pb-3 text-sm'>
-                <div className='col-start-1 sm:col-start-2 col-span-5 sm:col-span-4'>
-                  <div className='grid grid-cols-3'>
-                    <div className='col-start-2 col-span-2'>
+              <div className='flex justify-center pb-3 text-sm'>
+                <div className='w-5/6 sm:ml-[16.666667%] sm:w-2/3'>
+                  <div className='flex'>
+                    <div className='w-1/3 shrink-0' />
+                    <div className='w-2/3'>
                       <h6 className='font-semibold'>{t('header2')}</h6>
                       <p className='whitespace-pre-line'>{t.rich('p2', { b: (chunks) => <b>{chunks}</b> })}</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className='grid grid-cols-6 text-sm'>
-                <div className='col-start-1 sm:col-start-2 col-span-5 sm:col-span-4'>
-                  <div className='grid grid-cols-3 items-center'>
-                    <FontAwesomeIcon icon={faPhoneVolume} className='text-3xl mx-auto' />
-                    <div className='col-span-2'>
+              <div className='flex justify-center text-sm'>
+                <div className='w-5/6 sm:ml-[16.666667%] sm:w-2/3'>
+                  <div className='flex items-center'>
+                    <div className='flex w-1/3 shrink-0 justify-center'>
+                      <FontAwesomeIcon icon={faPhoneVolume} className='text-3xl' />
+                    </div>
+                    <div className='w-2/3'>
                       <h6 className='font-semibold text-'>{t('header3')}</h6>
                       <p>+48 695 57 40 28</p>
                       <p>+48 601 55 49 81</p>
@@ -64,7 +69,7 @@ const Contact = () => {
                 </a>
               </p>
             </div>
-            <div className='px-8 sm:p-0'>
+            <div className='w-full px-8 sm:w-1/2 sm:p-0'>
               <div className='relative h-80 sm:h-full'>
                 {!loaded && (
                   <Loader
