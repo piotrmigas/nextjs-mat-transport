@@ -24,7 +24,7 @@ const Contact = () => {
             <div className='w-full sm:w-1/2'>
               <h5 className='mb-5 font-semibold text-center'>{t('name')}</h5>
               <div className='flex mb-4 text-sm'>
-                <div className='w-5/6 sm:ml-[16.666667%] sm:w-2/3'>
+                <div className='w-5/6 sm:ml-[16.5%] sm:w-2/3'>
                   <div className='flex items-center'>
                     <div className='flex w-1/3 shrink-0 justify-center'>
                       <FontAwesomeIcon icon={faMapMarkerAlt} className='text-3xl' />
