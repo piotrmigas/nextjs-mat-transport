@@ -1,10 +1,20 @@
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { useForm, SubmitHandler, FieldValues } from 'react-hook-form';
+import { useForm, SubmitHandler } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
 import 'react-datepicker/dist/react-datepicker.css';
 import DatePicker from 'react-datepicker';
+import { siteConfig } from '@/site-config';
+
+type FormValues = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  transferDate?: string;
+  message: string;
+};
 
 const ContactForm = () => {
   const [startDate, setStartDate] = useState<Date | null>(null);
@@ -24,26 +34,39 @@ const ContactForm = () => {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm({ mode: 'onChange' });
+    setValue,
+  } = useForm<FormValues>({ mode: 'onChange' });
 
-  const onSubmit: SubmitHandler<FieldValues> = ({ firstName, lastName, message, phone, email }) => {
+  const handleDateChange = (date: Date | null) => {
+    setStartDate(date);
+    setValue('transferDate', date ? date.toISOString() : '', {
+      shouldDirty: true,
+      shouldValidate: true,
+    });
+  };
+
+  const onSubmit: SubmitHandler<FormValues> = ({ firstName, lastName, message, phone, email, transferDate }) => {
+    const selectedDate = transferDate ? new Date(transferDate) : startDate;
+    const { serviceId, templateId, publicKey } = siteConfig.emailJs;
+
     emailjs
       .send(
-        'gmail',
-        'template_1G20d3s3',
+        serviceId,
+        templateId,
         {
           message_html: message,
-          start_date: startDate?.toLocaleDateString('pl-PL') ?? '',
+          start_date: selectedDate?.toLocaleDateString('pl-PL') ?? '',
           from_firstName: firstName,
           from_lastName: lastName,
           from_phone: phone,
           reply_to: email,
         },
-        process.env.NEXT_PUBLIC_EMAILJS,
+        publicKey,
       )
       .then(() => {
         toast.success(t('alertSuccess'));
         reset();
+        setStartDate(null);
       })
       .catch(() => {
         toast.error(t('alertError'));
@@ -131,9 +154,7 @@ const ContactForm = () => {
                 <DatePicker
                   id='transferDate'
                   selected={startDate}
-                  onChange={(date: Date | null) => {
-                    if (date) setStartDate(date);
-                  }}
+                  onChange={handleDateChange}
                   className='mt-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md shadow-sm'
                 />
               ) : (

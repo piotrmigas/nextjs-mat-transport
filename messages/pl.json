@@ -77,6 +77,7 @@
       "info2": "Najbardziej luksusowy van produkowany obecnie, pneumatyczne zawieszenie wraz ze skórzanymi indywidualnymi fotelami zapewni maksimum komfortu, każdy fotel posiada pełny zakres regulacji, możliwość dowolnej aranżacji wnętrza pozwala m.in. na konferencyjny układ siedzeń, każdy pasażer ma możliwość indywidualnego doboru temperatury przez własny panel regulacji klimatyzacji, całości dopełnia najwyższej jakości system nagłośnienia, drewniane wykończenia oraz nastrojowe oświetlenie ambiente, szereg systemów bezpieczeństwa w które wyposażony jest samochód dba o bezpieczny przebieg podróży, mercedes klasy v 2015 pozwala na podróż w najbardziej komfortowych i bezpiecznych warunkach."
     },
     "mercedesvito111": {
+      "header": "MERCEDES VITO 111CDI/115CDI",
       "seats": "liczba miejsc 8+1",
       "info": "wyposażenie: wersja turystyczna, siedzenia regulowane comfort, klimatyzacja, cd, przyciemniane szyby w przestrzeni pasażerskiej, uchwyty na napoje, gps, na życzenie kierowca z językiem angielskim lub holenderskim."
     },
@@ -86,10 +87,12 @@
       "info": "wyposażenie: czarny metalik, klimatyzacja i ogrzewanie dwustrefowe automatyczne, webasto, fotele regulowane z podłokietnikami, indywidualne oświetlenie, możliwość konferencyjnego lub standardowego ustawienia foteli, przyciemniane szyby w przestrzeni pasażerskiej, cd, uchwyty na napoje, gps,wersja przedłużona z bardzo dużym miejscem na bagaż, na życzenie kierowca z językiem angielskim."
     },
     "minibusvianocdi": {
+      "header": "MINIBUS VIANO CDI",
       "seats": "liczba miejsc 5+1",
       "info": "wyposażenie: wersja luksusowa, klimatyzacja i ogrzewanie dwustrefowe, webasto, indywidualne regulowane fotele, przesuwane i obracane z podłokietnikami, indywidualne oświetlenie, możliwość konferencyjnego lub standardowego ustawienia foteli, przyciemniane szyby w przestrzeni pasażerskiej, cd, uchwyty na napoje, gps, na życzenie kierowca z językiem angielskim lub holenderskim."
     },
     "minibusvianovip": {
+      "header": "MINIBUS VIANO VIP",
       "seats": "liczba miejsc 7+1",
       "info": "wyposażenie: wersja luksusowa, półskórzana tapicerka, klimatyzacja i ogrzewanie dwustrefowe, webasto, fotele regulowane z podłokietnikami, indywidualne oświetlenie, możliwość konferencyjnego lub standardowego ustawienia foteli, przyciemniane szyby w przestrzeni pasażerskiej, cd, uchwyty na napoje, gps, na życzenie kierowca z językiem angielskim"
     }
@@ -97,10 +100,12 @@
   "buses21": {
     "header": "Busy wynajem 16-21 miejsc",
     "mercedessprinter2020": {
+      "header": "MERCEDES SPRINTER 2020",
       "seats": "liczba miejsc 20+1",
       "info": "wyposażenie: wersja vip kolor czarny metalik, skórzana tapicerka, drewniane wykończenia ozdobne, klimatyczne oświetlenie ambiente, fotele regulowane, rozsuwane z podłokietnikami, klimatyzacja automatyczna z indywidualnymi nawiewami, webasto, dvd/cd, monitor lcd, przyciemniane szyby, mikrofon, euro 6."
     },
     "mercedessprinter2013": {
+      "header": "MERCEDES SPRINTER 2013",
       "seats": "liczba miejsc 21+1",
       "info": "wyposażenie: wersja turystyczna, fotele regulowane z podłokietnikami i podnóżkami, klimatyzacja automatyczna z indywidualnymi nawiewami, webasto, oświetlenie, dvd/cd, monitor lcd, automatyczny stopień ułatwiający wsiadanie, przyciemniane szyby, mikrofon, euro 5."
     }
@@ -108,14 +113,17 @@
   "coaches33": {
     "header": "Autokary wynajem - do 33 miejsc",
     "ivecomago2silver": {
+      "header": "IVECO MAGO 2",
       "seats": "liczba miejsc 30+1",
       "info": "wyposażenie: automatyczna klimatyzacja z indywidualnymi nawiewami, webasto, mikrofon, komfortowe fotele rozkładane z podłokietnikami z bardzo dużą przestrzenią na nogi, dvd/cd, monitor, oświetlenie, przyciemniane szyby, pasy bezpieczeństwa na wszystkich fotelach, autobus przestronny z bardzo dużymi odstępami miedzy fotelami, bardzo duża przestrzeń na bagaż."
     },
     "ivecomago2white": {
+      "header": "IVECO MAGO 2",
       "seats": "liczba miejsc 32+1",
       "info": "wyposażenie: automatyczna klimatyzacja z indywidualnymi nawiewami, webasto, mikrofon, komfortowe fotele rozkładane z podłokietnikami z bardzo dużą przestrzenią na nogi, dvd/cd, monitor x 2, oświetlenie, przyciemniane szyby, pasy bezpieczeństwa na wszystkich fotelach, autobus przestronny z bardzo dużymi odstępami miedzy fotelami, bardzo duża przestrzeń na bagaż."
     },
     "ivecorosero": {
+      "header": "IVECO ROSERO VIP 2018",
       "seats": "liczba miejsc 30+1",
       "info": "wyposażenie: automatyczna klimatyzacja z indywidualnymi nawiewami, gniazda usb, gniazda 220 v do ładowania laptopów, webasto, mikrofon x 2, półskórzane, komfortowe fotele rozkładane z podłokietnikami z bardzo dużą przestrzenią na nogi, lodówka, dvd/cd, monitor x 2, oświetlenie, przyciemniane szyby, pasy bezpieczeństwa na wszystkich fotelach, autobus przestronny z bardzo dużymi odstępami między fotelami, duża przestrzeń na bagaż."
     }
@@ -123,18 +131,22 @@
   "coaches55": {
     "header": "Autokary wynajem - do 55 miejsc",
     "mercedes350": {
+      "header": "MERCEDES 350 RHD",
       "seats": "liczba miejsc 49+2",
       "info": "wyposażenie: klimatyzacja, wc, dvd/cd, gps, mikrofon, stoliki, pasy bezpieczeństwa, abs, asr, telma, lodówka, barek, toaleta, przyciemniane szyby, ubezpieczenie ac/oc/nnw."
     },
     "mercedesturismo": {
+      "header": "MERCEDES TOURISMO VIP CLASS",
       "seats": "liczba miejsc 53+2",
       "info": "wyposażenie: klimatyzacja, wc, dvd/cd, gps, mikrofon, pasy bezpieczeństwa, abs, asr, retarder, lodówka, barek, toaleta, przyciemniane szyby, ubezpieczenie ac/oc/nnw."
     },
     "neoplaneuroliner": {
+      "header": "NEOPLAN EUROLINER",
       "seats": "liczba miejsc 49+2",
       "info": "wyposażenie: klimatyzacja, wc, dvd/cd, gps, mikrofon, stoliki, pasy bezpieczeństwa, abs, asr, telma, lodówka, barek, toaleta, przyciemniane szyby, ubezpieczenie ac/oc/nnw."
     },
     "setra415": {
+      "header": "SETRA 415 HD ROYAL CLASS",
       "seats": "liczba miejsc 49+2",
       "info": "wyposażenie: klimatyzacja, wc, dvd/cd, gps, mikrofon, stoliki, pasy bezpieczeństwa, abs, asr, telma, lodówka, barek, toaleta, przyciemniane szyby, ubezpieczenie ac/oc/nnw."
     }

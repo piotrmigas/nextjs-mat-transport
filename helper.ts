@@ -39,11 +39,18 @@ export const getLocalizedCovidImgs = (locale: string): string[] => {
   return covidInfoImgs.map((img) => getLocalizedImagePath(img, locale));
 };
 
-export const carsData = [
+export type FleetVehicle = {
+  headerKey: string;
+  infoKey: string;
+  seatsKey: string;
+  images: string[];
+};
+
+export const carsData: FleetVehicle[] = [
   {
-    header: 'mercedese2025.header',
-    info: 'mercedese2025.info',
-    seats: 'mercedese2025.seats',
+    headerKey: 'mercedese2025.header',
+    infoKey: 'mercedese2025.info',
+    seatsKey: 'mercedese2025.seats',
     images: [
       '/images/fleet/cars/mercedes-e-2025/1.jpg',
       '/images/fleet/cars/mercedes-e-2025/2.jpg',
@@ -54,9 +61,9 @@ export const carsData = [
     ],
   },
   {
-    header: 'mercedese2021.header',
-    info: 'mercedese2021.info',
-    seats: 'mercedese2021.seats',
+    headerKey: 'mercedese2021.header',
+    infoKey: 'mercedese2021.info',
+    seatsKey: 'mercedese2021.seats',
     images: [
       '/images/fleet/cars/mercedes-e-2021/1.jpg',
       '/images/fleet/cars/mercedes-e-2021/2.jpg',
@@ -67,9 +74,9 @@ export const carsData = [
     ],
   },
   {
-    header: 'mercedese2022.header',
-    info: 'mercedese2022.info',
-    seats: 'mercedese2022.seats',
+    headerKey: 'mercedese2022.header',
+    infoKey: 'mercedese2022.info',
+    seatsKey: 'mercedese2022.seats',
     images: [
       '/images/fleet/cars/mercedes-e-2022/1.jpg',
       '/images/fleet/cars/mercedes-e-2022/2.jpg',
@@ -80,9 +87,9 @@ export const carsData = [
     ],
   },
   {
-    header: 'bmw5black.header',
-    info: 'bmw5black.info',
-    seats: 'bmw5black.seats',
+    headerKey: 'bmw5black.header',
+    infoKey: 'bmw5black.info',
+    seatsKey: 'bmw5black.seats',
     images: [
       '/images/fleet/cars/bmw-5-black/1.jpg',
       '/images/fleet/cars/bmw-5-black/2.jpg',
@@ -93,9 +100,9 @@ export const carsData = [
     ],
   },
   {
-    header: 'bmw5blue.header',
-    info: 'bmw5blue.info',
-    seats: 'bmw5blue.seats',
+    headerKey: 'bmw5blue.header',
+    infoKey: 'bmw5blue.info',
+    seatsKey: 'bmw5blue.seats',
     images: [
       '/images/fleet/cars/bmw-5-blue/1.jpg',
       '/images/fleet/cars/bmw-5-blue/2.jpg',
@@ -107,11 +114,11 @@ export const carsData = [
   },
 ];
 
-export const buses8Data = [
+export const buses8Data: FleetVehicle[] = [
   {
-    header: 'mercedesavantgarde.header',
-    info: 'mercedesavantgarde.info',
-    seats: 'mercedesavantgarde.seats',
+    headerKey: 'mercedesavantgarde.header',
+    infoKey: 'mercedesavantgarde.info',
+    seatsKey: 'mercedesavantgarde.seats',
     images: [
       '/images/fleet/buses8/mercedes-v-avantgarde/1.jpg',
       '/images/fleet/buses8/mercedes-v-avantgarde/2.jpg',
@@ -122,9 +129,9 @@ export const buses8Data = [
     ],
   },
   {
-    header: 'mercedesvitoextralong.header',
-    info: 'mercedesvitoextralong.info',
-    seats: 'mercedesvitoextralong.seats',
+    headerKey: 'mercedesvitoextralong.header',
+    infoKey: 'mercedesvitoextralong.info',
+    seatsKey: 'mercedesvitoextralong.seats',
     images: [
       '/images/fleet/buses8/mercedes-v-extralong/1.jpg',
       '/images/fleet/buses8/mercedes-v-extralong/2.jpg',
@@ -137,9 +144,9 @@ export const buses8Data = [
     ],
   },
   {
-    header: 'MINIBUS VIANO VIP',
-    info: 'minibusvianovip.info',
-    seats: 'minibusvianovip.seats',
+    headerKey: 'minibusvianovip.header',
+    infoKey: 'minibusvianovip.info',
+    seatsKey: 'minibusvianovip.seats',
     images: [
       '/images/fleet/buses8/minibus-viano-vip/1.jpg',
       '/images/fleet/buses8/minibus-viano-vip/2.jpg',
@@ -150,9 +157,9 @@ export const buses8Data = [
     ],
   },
   {
-    header: 'MINIBUS VIANO CDI',
-    info: 'minibusvianocdi.info',
-    seats: 'minibusvianovip.seats',
+    headerKey: 'minibusvianocdi.header',
+    infoKey: 'minibusvianocdi.info',
+    seatsKey: 'minibusvianocdi.seats',
     images: [
       '/images/fleet/buses8/minibus-viano-cdi/1.jpg',
       '/images/fleet/buses8/minibus-viano-cdi/2.jpg',
@@ -162,9 +169,9 @@ export const buses8Data = [
     ],
   },
   {
-    header: 'MERCEDES VITO 111CDI/115CDI',
-    info: 'mercedesvito111.info',
-    seats: 'mercedesvito111.seats',
+    headerKey: 'mercedesvito111.header',
+    infoKey: 'mercedesvito111.info',
+    seatsKey: 'mercedesvito111.seats',
     images: [
       '/images/fleet/buses8/mercedes-vito-111/1.jpg',
       '/images/fleet/buses8/mercedes-vito-111/2.jpg',
@@ -175,11 +182,11 @@ export const buses8Data = [
   },
 ];
 
-export const buses21Data = [
+export const buses21Data: FleetVehicle[] = [
   {
-    header: 'MERCEDES SPRINTER 2020',
-    info: 'mercedessprinter2020.info',
-    seats: 'mercedessprinter2020.seats',
+    headerKey: 'mercedessprinter2020.header',
+    infoKey: 'mercedessprinter2020.info',
+    seatsKey: 'mercedessprinter2020.seats',
     images: [
       '/images/fleet/buses21/mercedes-sprinter-2020/1.jpg',
       '/images/fleet/buses21/mercedes-sprinter-2020/2.jpg',
@@ -189,9 +196,9 @@ export const buses21Data = [
     ],
   },
   {
-    header: 'MERCEDES SPRINTER 2013',
-    info: 'mercedessprinter2013.info',
-    seats: 'mercedessprinter2013.seats',
+    headerKey: 'mercedessprinter2013.header',
+    infoKey: 'mercedessprinter2013.info',
+    seatsKey: 'mercedessprinter2013.seats',
     images: [
       '/images/fleet/buses21/mercedes-sprinter-2013/1.jpg',
       '/images/fleet/buses21/mercedes-sprinter-2013/2.jpg',
@@ -202,11 +209,11 @@ export const buses21Data = [
   },
 ];
 
-export const coaches33Data = [
+export const coaches33Data: FleetVehicle[] = [
   {
-    header: 'IVECO ROSERO VIP 2018',
-    info: 'ivecorosero.info',
-    seats: 'ivecorosero.seats',
+    headerKey: 'ivecorosero.header',
+    infoKey: 'ivecorosero.info',
+    seatsKey: 'ivecorosero.seats',
     images: [
       '/images/fleet/coaches33/iveco-rosero/1.jpg',
       '/images/fleet/coaches33/iveco-rosero/2.jpg',
@@ -218,9 +225,9 @@ export const coaches33Data = [
     ],
   },
   {
-    header: 'IVECO MAGO 2 ',
-    info: 'ivecomago2white.info',
-    seats: 'ivecomago2white.seats',
+    headerKey: 'ivecomago2white.header',
+    infoKey: 'ivecomago2white.info',
+    seatsKey: 'ivecomago2white.seats',
     images: [
       '/images/fleet/coaches33/iveco-mago-2-white/1.jpg',
       '/images/fleet/coaches33/iveco-mago-2-white/2.jpg',
@@ -230,9 +237,9 @@ export const coaches33Data = [
     ],
   },
   {
-    header: 'IVECO MAGO 2',
-    info: 'ivecomago2silver.info',
-    seats: 'ivecomago2silver.seats',
+    headerKey: 'ivecomago2silver.header',
+    infoKey: 'ivecomago2silver.info',
+    seatsKey: 'ivecomago2silver.seats',
     images: [
       '/images/fleet/coaches33/iveco-mago-2-silver/1.jpg',
       '/images/fleet/coaches33/iveco-mago-2-silver/2.jpg',
@@ -244,11 +251,11 @@ export const coaches33Data = [
   },
 ];
 
-export const coaches55Data = [
+export const coaches55Data: FleetVehicle[] = [
   {
-    header: 'MERCEDES TOURISMO VIP CLASS',
-    info: 'mercedesturismo.info',
-    seats: 'mercedesturismo.seats',
+    headerKey: 'mercedesturismo.header',
+    infoKey: 'mercedesturismo.info',
+    seatsKey: 'mercedesturismo.seats',
     images: [
       '/images/fleet/coaches55/mercedes-turismo/1.jpg',
       '/images/fleet/coaches55/mercedes-turismo/2.jpg',
@@ -258,9 +265,9 @@ export const coaches55Data = [
     ],
   },
   {
-    header: 'SETRA 415 HD ROYAL CLASS',
-    info: 'setra415.info',
-    seats: 'setra415.seats',
+    headerKey: 'setra415.header',
+    infoKey: 'setra415.info',
+    seatsKey: 'setra415.seats',
     images: [
       '/images/fleet/coaches55/setra/1.jpg',
       '/images/fleet/coaches55/setra/2.jpg',
@@ -268,9 +275,9 @@ export const coaches55Data = [
     ],
   },
   {
-    header: 'NEOPLAN EUROLINER',
-    info: 'neoplaneuroliner.info',
-    seats: 'neoplaneuroliner.seats',
+    headerKey: 'neoplaneuroliner.header',
+    infoKey: 'neoplaneuroliner.info',
+    seatsKey: 'neoplaneuroliner.seats',
     images: [
       '/images/fleet/coaches55/neoplan/1.jpg',
       '/images/fleet/coaches55/neoplan/2.jpg',
@@ -278,9 +285,9 @@ export const coaches55Data = [
     ],
   },
   {
-    header: 'MERCEDES 350 RHD',
-    info: 'mercedes350.info',
-    seats: 'mercedes350.seats',
+    headerKey: 'mercedes350.header',
+    infoKey: 'mercedes350.info',
+    seatsKey: 'mercedes350.seats',
     images: [
       '/images/fleet/coaches55/mercedes-350/1.jpg',
       '/images/fleet/coaches55/mercedes-350/2.jpg',

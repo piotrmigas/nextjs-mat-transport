@@ -9,6 +9,7 @@ import { Montserrat } from 'next/font/google';
 import { locale } from 'next/root-params';
 import '../globals.css';
 import { getPageMetadata } from '@/helper';
+import { siteConfig } from '@/site-config';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -39,7 +40,7 @@ export default async function RootLayout({
             <Navbar />
             <main>{children}</main>
             <a
-              href='https://api.whatsapp.com/send?phone=48695574028'
+              href={siteConfig.whatsappLink}
               className='whatsapp-button'
               target='_blank'
               rel='noreferrer'

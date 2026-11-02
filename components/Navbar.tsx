@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 import Image from 'next/image';
+import { siteConfig } from '@/site-config';
 
 const Navbar = () => {
   const locale = useLocale();
@@ -109,7 +110,7 @@ const Navbar = () => {
                   />
                 ))}
                 <a
-                  href='https://facebook.com/mattransportkrakow'
+                  href={siteConfig.facebookUrl}
                   aria-label='Facebook'
                   className='hidden sm:flex mr-1 items-center'
                   target='_blank'
@@ -118,7 +119,7 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faFacebookSquare} />
                 </a>
                 <a
-                  href='https://www.instagram.com/mattransport'
+                  href={siteConfig.instagramUrl}
                   aria-label='Instagram'
                   className='hidden sm:flex items-center'
                   target='_blank'
@@ -174,7 +175,7 @@ const Navbar = () => {
                   />
                 ))}
                 <a
-                  href='https://facebook.com/mattransport'
+                  href={siteConfig.facebookUrl}
                   aria-label='Facebook'
                   className='flex items-center mr-1'
                   target='_blank'
@@ -183,7 +184,7 @@ const Navbar = () => {
                   <FontAwesomeIcon icon={faFacebookSquare} />
                 </a>
                 <a
-                  href='https://www.instagram.com/mattransport'
+                  href={siteConfig.instagramUrl}
                   aria-label='Instagram'
                   target='_blank'
                   rel='noreferrer'
