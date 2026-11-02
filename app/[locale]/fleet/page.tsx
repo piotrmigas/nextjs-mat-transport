@@ -32,7 +32,7 @@ const Fleet = () => {
     <>
       <PageHeader header={t('header')} />
       <div className='text-gray-900 bg-gray-200'>
-        <div className='max-w-4xl mx-auto pt-3 pb-10'>
+        <div className='max-w-4xl mx-auto pt-3 pb-10 px-8'>
           <p className='py-5 font-medium'>{t('title')}</p>
           <p>{t('content')}</p>
           <ul className='list-disc list-outside pl-5 pt-5 leading-8'>

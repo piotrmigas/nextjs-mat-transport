@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <FadeIn>
-      <div className='mx-auto max-w-4xl'>
+      <div className='mx-auto max-w-4xl px-7 min-[57rem]:px-0'>
         <h4 className='text-center py-5 mx-10'>{t('header')}</h4>
         <div className='mb-10'>
           <Carousel images={showcaseImgs} />

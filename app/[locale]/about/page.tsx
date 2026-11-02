@@ -16,7 +16,7 @@ const About = () => {
     <>
       <PageHeader header={t('header')} />
       <div className='py-8 bg-gray-200 text-gray-900'>
-        <div className='max-w-4xl mx-auto'>
+        <div className='max-w-4xl mx-auto px-8'>
           <p className='pb-6 leading-relaxed'>{t.rich('p1', { b: (chunks) => <b>{chunks}</b> })}</p>
           <p className='pb-6 leading-relaxed'>{t.rich('p2', { b: (chunks) => <b>{chunks}</b> })}</p>
           <p className='pb-6 leading-relaxed'>{t('p3')}</p>

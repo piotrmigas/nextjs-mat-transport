@@ -1,16 +1,16 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type Dispatch, type SetStateAction } from 'react';
 import Image from 'next/image';
 import LightboxGallery from './LightboxGallery';
 
 const openLightboxAt = (
   setIndex: (value: number) => void,
-  setLightboxOpen: (value: boolean) => void,
+  setLightboxOpen: Dispatch<SetStateAction<boolean>>,
   index: number,
 ) => {
   setIndex(index);
-  setLightboxOpen(true);
+  setLightboxOpen((isOpen) => !isOpen);
 };
 
 type Props = {

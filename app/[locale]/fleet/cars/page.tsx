@@ -16,7 +16,7 @@ const Cars = () => {
     <>
       <PageHeader header={t('header')} />
       <div className='bg-gray-200 text-gray-900'>
-        <div className='max-w-6xl mx-auto py-9'>
+        <div className='max-w-6xl mx-auto py-9 px-7'>
           {carsData.map(({ headerKey, seatsKey, infoKey, images }, i) => (
             <VehicleInfo header={t(headerKey)} seats={t(seatsKey)} info={t(infoKey)} key={i} images={images} />
           ))}

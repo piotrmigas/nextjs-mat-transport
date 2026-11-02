@@ -28,7 +28,7 @@ const Contact = () => {
                   <div className='grid grid-cols-3 items-center'>
                     <FontAwesomeIcon icon={faMapMarkerAlt} className='text-3xl mx-auto' />
                     <div className='col-span-2'>
-                      <h6 className='font-semibold'>{t('h1')}</h6>
+                      <h6 className='font-semibold'>{t('header1')}</h6>
                       <p className='whitespace-pre-line'>{t.rich('p1', { b: (chunks) => <b>{chunks}</b> })}</p>
                     </div>
                   </div>
@@ -38,7 +38,7 @@ const Contact = () => {
                 <div className='col-start-1 sm:col-start-2 col-span-5 sm:col-span-4'>
                   <div className='grid grid-cols-3'>
                     <div className='col-start-2 col-span-2'>
-                      <h6 className='font-semibold'>{t('h2')}</h6>
+                      <h6 className='font-semibold'>{t('header2')}</h6>
                       <p className='whitespace-pre-line'>{t.rich('p2', { b: (chunks) => <b>{chunks}</b> })}</p>
                     </div>
                   </div>
@@ -49,7 +49,7 @@ const Contact = () => {
                   <div className='grid grid-cols-3 items-center'>
                     <FontAwesomeIcon icon={faPhoneVolume} className='text-3xl mx-auto' />
                     <div className='col-span-2'>
-                      <h6 className='font-semibold text-'>{t('h3')}</h6>
+                      <h6 className='font-semibold text-'>{t('header3')}</h6>
                       <p>+48 695 57 40 28</p>
                       <p>+48 601 55 49 81</p>
                       <p>TEL/FAX 12 655 49 81</p>
