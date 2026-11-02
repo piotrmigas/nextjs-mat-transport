@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHeader from '@/components/PageHeader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCar, faShuttleVan, faBus, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faCar, faShuttleVan, faBus } from '@fortawesome/free-solid-svg-icons';
 import { getPageMetadata } from '@/helper';
 import { locale } from 'next/root-params';
 
