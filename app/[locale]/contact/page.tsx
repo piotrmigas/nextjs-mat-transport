@@ -69,7 +69,7 @@ const Contact = () => {
                 </a>
               </p>
             </div>
-            <div className='w-full px-8 sm:w-1/2 sm:p-0'>
+            <div className='w-full sm:w-1/2 px-5 sm:pr-5 sm:pl-0'>
               <div className='relative h-80 sm:h-full'>
                 {!loaded && (
                   <Loader
