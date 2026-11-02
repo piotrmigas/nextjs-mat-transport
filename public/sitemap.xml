@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://mattransport.vercel.app</loc>
+    </url>
+    <url>
+        <loc>https://mattransport.vercel.app/about</loc>
+    </url>
+    <url>
+        <loc>https://mattransport.vercel.app/fleet</loc>
+    </url>
+     <url>
+        <loc>https://mattransport.vercel.app/fleet/cars</loc>
+    </url>
+     <url>
+        <loc>https://mattransport.vercel.app/fleet/buses8</loc>
+    </url>
+     <url>
+        <loc>https://mattransport.vercel.app/fleet/buses21</loc>
+    </url>
+     <url>
+        <loc>https://mattransport.vercel.app/fleet/coaches33</loc>
+    </url>
+     <url>
+        <loc>https://mattransport.vercel.app/fleet/coaches55</loc>
+    </url>
+    <url>
+        <loc>https://mattransport.vercel.app/testimonials</loc>
+    </url>
+    <url>
+        <loc>https://mattransport.vercel.app/contact</loc>
+    </url>
+    <url>
+        <loc>https://mattransport.vercel.app/sport</loc>
+    </url>
+</urlset>

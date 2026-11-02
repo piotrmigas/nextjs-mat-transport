@@ -12,7 +12,10 @@ type CarouselProps = {
 };
 
 const Carousel = ({ images }: CarouselProps) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay(), Fade()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ stopOnInteraction: false }),
+    Fade(),
+  ]);
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi);
 
   useEffect(() => {
