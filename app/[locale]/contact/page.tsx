@@ -37,7 +37,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className='flex pb-3 text-sm'>
-                <div className='w-5/6 sm:ml-[16.666667%] sm:w-2/3'>
+                <div className='w-5/6 sm:ml-[16.5%] sm:w-2/3'>
                   <div className='flex'>
                     <div className='w-1/3 shrink-0' />
                     <div className='w-2/3'>
@@ -48,7 +48,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className='flex text-sm'>
-                <div className='w-5/6 sm:ml-[16.666667%] sm:w-2/3'>
+                <div className='w-5/6 sm:ml-[16.5%] sm:w-2/3'>
                   <div className='flex items-center'>
                     <div className='flex w-1/3 shrink-0 justify-center'>
                       <FontAwesomeIcon icon={faPhoneVolume} className='text-3xl' />
