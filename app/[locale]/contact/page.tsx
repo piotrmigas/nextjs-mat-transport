@@ -23,7 +23,7 @@ const Contact = () => {
           <div className='flex flex-col sm:flex-row gap-6 sm:gap-0 pt-6 pb-5'>
             <div className='w-full sm:w-1/2'>
               <h5 className='mb-5 font-semibold text-center'>{t('name')}</h5>
-              <div className='flex justify-center mb-4 text-sm'>
+              <div className='flex mb-4 text-sm'>
                 <div className='w-5/6 sm:ml-[16.666667%] sm:w-2/3'>
                   <div className='flex items-center'>
                     <div className='flex w-1/3 shrink-0 justify-center'>
@@ -36,7 +36,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className='flex justify-center pb-3 text-sm'>
+              <div className='flex pb-3 text-sm'>
                 <div className='w-5/6 sm:ml-[16.666667%] sm:w-2/3'>
                   <div className='flex'>
                     <div className='w-1/3 shrink-0' />
@@ -47,7 +47,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className='flex justify-center text-sm'>
+              <div className='flex text-sm'>
                 <div className='w-5/6 sm:ml-[16.666667%] sm:w-2/3'>
                   <div className='flex items-center'>
                     <div className='flex w-1/3 shrink-0 justify-center'>
